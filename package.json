@@ -42,7 +42,8 @@
     "standard": "^5.4.1",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",
-    "webpack-merge": "^0.7.3"
+    "webpack-merge": "^0.7.3",
+    "moment": "^2.11.1"
   },
   "dependencies": {
     "dotenv": "^2.0.0",

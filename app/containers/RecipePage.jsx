@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchRecipe } from '../actions/index'
-import Title from '../components/Title.jsx'
+import Recipe from '../components/Recipe.jsx'
 
 class RecipePage extends React.Component {
   constructor (props) {
@@ -10,8 +10,14 @@ class RecipePage extends React.Component {
   }
 
   render () {
-    return (<Title text={this.props.recipe.currentRecipe.title} />)
+    return (<Recipe data={this.props.recipe.currentRecipe} />)
   }
+}
+
+RecipePage.propTypes = {
+  dispatch: React.PropTypes.func,
+  recipe: React.PropTypes.object,
+  params: React.PropTypes.object
 }
 
 const mapStateToProps = (state) => {
