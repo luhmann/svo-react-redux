@@ -1,9 +1,7 @@
 import React from 'react'
 import Title from '../components/Title.jsx'
-import { connect } from 'react-redux'
-import { routeActions } from 'react-router-redux'
 
-function App ({ push, children }) {
+export default ({ push, children }) => {
   return (
     <div>
       <header>
@@ -16,8 +14,3 @@ function App ({ push, children }) {
     </div>
   )
 }
-
-export default connect(
-  null,
-  routeActions
-)(App)

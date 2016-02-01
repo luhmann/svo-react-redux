@@ -1,7 +1,9 @@
 require('dotenv').config()
-const merge = require('webpack-merge')
+const Clean = require('clean-webpack-plugin')
+const HtmlwebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const merge = require('webpack-merge')
 
 const TARGET = process.env.npm_lifecycle_event
 process.env.BABEL_ENV = TARGET
@@ -27,7 +29,15 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'svo.js'
-  }
+  },
+  plugins: [
+    new HtmlwebpackPlugin({
+      inject: false,
+      template: './config/baseTemplate.ejs',
+      title: 'Stove vs oven',
+      appMountId: 'app'
+    })
+  ]
 }
 
 if (TARGET === 'start' || !TARGET) {
@@ -50,5 +60,19 @@ if (TARGET === 'start' || !TARGET) {
 }
 
 if (TARGET === 'build') {
-  module.exports = merge(common, {})
+  module.exports = merge(common, {
+    output: {
+      path: PATHS.build,
+      filename: '[name].[chunkhash].js',
+      chunkFilename: '[chunkhash].js'
+    },
+    plugins: [
+      new Clean([PATHS.build]),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false
+        }
+      })
+    ]
+  })
 }

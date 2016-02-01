@@ -6,14 +6,17 @@ import { browserHistory } from 'react-router'
 import rootReducer from '../reducers'
 
 export default function configureStore (initialState) {
+  // sync react-router and redux
   const reduxRouterMiddleware = syncHistory(browserHistory)
 
+  // apply different middleware in dev and production
   const middleware = process.env.NODE_ENV === 'production'
     ? [ thunk, reduxRouterMiddleware ]
     : [ thunk, reduxRouterMiddleware, logger() ]
 
   const store = createStore(rootReducer, initialState, compose(
     applyMiddleware(...middleware),
+    // support for reduxDevTools chrome plugin => using redux-developer-tools is an option without chrome plugin
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ))
 
