@@ -7,7 +7,7 @@
     "build": "webpack",
     "lint": "standard",
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "babel-tape-runner app/**/*.spec.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -35,15 +35,21 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.1",
     "clean-webpack-plugin": "^0.1.7",
+    "enzyme": "^1.4.1",
     "html-webpack-plugin": "^2.7.2",
     "html-webpack-template": "^4.0.0",
+    "moment": "^2.11.1",
     "redux": "^3.1.7",
     "redux-logger": "^2.4.0",
     "standard": "^5.4.1",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.7.3",
-    "moment": "^2.11.1"
+    "tape": "^4.4.0",
+    "babel-tape-runner": "^2.0.0",
+    "jsdom": "^7.2.2",
+    "react-addons-test-utils": "^0.14.7",
+    "tap-spec": "^4.1.1"
   },
   "dependencies": {
     "dotenv": "^2.0.0",
