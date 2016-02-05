@@ -13,13 +13,17 @@ class RecipePage extends React.Component {
   }
 
   render () {
-    if (this.props.recipe.get('fetching')) {
+    if (this.props.recipe.fetching) {
       return (<Loading />)
-    } else if (this.props.recipe.get('current')) {
-      return (<Recipe recipe={this.props.recipe.get('current')} />)
+    } else if (this.props.recipe.current) {
+      return (<Recipe recipe={this.props.recipe.current} />)
     } else {
       return <div>Kapott</div>
     }
+  }
+
+  shouldComponentUpdate (nextProps) {
+    return this.props.recipe !== nextProps.recipe
   }
 }
 
