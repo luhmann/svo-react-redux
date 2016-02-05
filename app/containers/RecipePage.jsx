@@ -10,7 +10,7 @@ class RecipePage extends React.Component {
   }
 
   render () {
-    return (<Recipe data={this.props.recipe.currentRecipe} />)
+    return (<Recipe data={this.props.recipe.current} />)
   }
 }
 

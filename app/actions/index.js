@@ -1,5 +1,5 @@
 import { get } from 'superagent'
-import * as types from '../constants/ActionTypes.js'
+import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
 import { buildRecipeUrl } from '../lib/UrlBuilder.js'
 
 export function fetchRecipe (slug) {
@@ -21,9 +21,9 @@ export function fetchRecipe (slug) {
 }
 
 function requestRecipe () {
-  return { type: types.REQUEST_RECIPE }
+  return { type: REQUEST_RECIPE }
 }
 
 function receiveRecipe (recipe) {
-  return { type: types.RECEIVE_RECIPE, recipe }
+  return { type: RECEIVE_RECIPE, recipe }
 }
