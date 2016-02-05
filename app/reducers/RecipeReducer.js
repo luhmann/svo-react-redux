@@ -1,18 +1,17 @@
 import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
+import { Map } from 'immutable'
 
-const intialState = {
+const intialState = Map({
   fetching: false,
-  current: {}
-}
+  current: null
+})
 
 function recipe (state = intialState, action) {
   switch (action.type) {
     case REQUEST_RECIPE:
-      return Object.assign({}, state, {
-        fetching: true
-      })
+      return state.set('fetching', true)
     case RECEIVE_RECIPE:
-      return Object.assign({}, state, {
+      return Map({
         fetching: false,
         current: action.recipe
       })

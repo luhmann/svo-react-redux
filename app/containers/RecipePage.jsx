@@ -1,6 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
+
 import { fetchRecipe } from '../actions/index'
+
+import Loading from '../components/loading/Loading.jsx'
 import Recipe from '../components/Recipe.jsx'
 
 class RecipePage extends React.Component {
@@ -10,7 +13,13 @@ class RecipePage extends React.Component {
   }
 
   render () {
-    return (<Recipe data={this.props.recipe.current} />)
+    if (this.props.recipe.get('fetching')) {
+      return (<Loading />)
+    } else if (this.props.recipe.get('current')) {
+      return (<Recipe recipe={this.props.recipe.get('current')} />)
+    } else {
+      return <div>Kapott</div>
+    }
   }
 }
 
