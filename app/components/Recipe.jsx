@@ -1,6 +1,6 @@
 import React from 'react'
 
-import RecipeHeader from './recipe/RecipeHeader.jsx'
+import RecipeHeader from './recipe/header/RecipeHeader.jsx'
 import RecipeFooter from './recipe/RecipeFooter.jsx'
 
 export default (props) => (

@@ -1,6 +1,6 @@
 import { get } from 'superagent'
 import * as types from '../constants/ActionTypes.js'
-import { buildRecipeUrl } from '../helper/UrlBuilder.js'
+import { buildRecipeUrl } from '../lib/UrlBuilder.js'
 
 export function fetchRecipe (slug) {
   return dispatch => {
@@ -13,6 +13,7 @@ export function fetchRecipe (slug) {
         try {
           dispatch(receiveRecipe(res.body.recipe))
         } catch (e) {
+          // TODO: Implement redux conform error handling
           console.log('GET recipe failed', err)
         }
       })
