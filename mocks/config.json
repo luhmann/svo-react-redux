@@ -1,0 +1,16 @@
+{
+  "mockDirectory": "./mocks/resp",
+  "quiet": false,
+  "port": "7878",
+  "latency": 50,
+  "logRequestHeaders": false,
+  "staticDirectory": "./mocks/assets",
+  "staticPath": "/assets",
+  "webServices": {
+    "api/v1/recipe/:slug": {
+      "mockFile": "recipe/recipe.json",
+      "switch": "slug",
+      "verbs": ["get"]
+    }
+}
+}

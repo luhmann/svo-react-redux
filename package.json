@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "lint": "standard",
-    "start": "webpack-dev-server",
-    "test": "babel-tape-runner -r './app/config/testSetup.js' 'app/**/*.spec.js' | tap-diff"
+    "dev": "webpack-dev-server",
+    "lint": "standard --verbose | snazzy",
+    "mocks": "apimocker -c ./mocks/config.json",
+    "start": "npm run mocks & npm run dev",
+    "test": "babel-tape-runner -r './app/config/testSetup.js' 'app/**/*.spec.js' | tap-diff",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/luhmann/svo-react-redux#readme",
   "devDependencies": {
+    "apimocker": "^0.4.11",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-plugin-array-includes": "^2.0.2",
@@ -47,6 +51,7 @@
     "react-addons-test-utils": "^0.14.7",
     "redux": "^3.1.7",
     "redux-logger": "^2.4.0",
+    "snazzy": "^2.0.1",
     "standard": "^5.4.1",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",

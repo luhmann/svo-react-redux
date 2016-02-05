@@ -45,7 +45,7 @@ const common = {
   ]
 }
 
-if (TARGET === 'start' || !TARGET) {
+if (TARGET === 'dev' || !TARGET) {
   module.exports = merge(common, {
     devServer: {
       contentBase: PATHS.build,
