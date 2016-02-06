@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux'
-import { routeReducer } from 'react-router-redux'
+import { combineReducers } from 'redux-immutable'
+import route from './RouteReducer.js'
 import recipe from './RecipeReducer.js'
 
 const rootReducer = combineReducers({
   recipe,
-  routeReducer
+  route
 })
 
 export default rootReducer

@@ -1,7 +1,7 @@
 import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
-import Immutable from 'seamless-immutable'
+import { Map, fromJS } from 'immutable'
 
-const intialState = Immutable({
+const intialState = Map({
   fetching: false,
   current: null
 })
@@ -11,9 +11,9 @@ function recipe (state = intialState, action) {
     case REQUEST_RECIPE:
       return state.set('fetching', true)
     case RECEIVE_RECIPE:
-      return Immutable({
+      return Map({
         fetching: false,
-        current: action.recipe
+        current: fromJS(action.recipe)
       })
   }
 

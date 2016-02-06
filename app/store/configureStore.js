@@ -1,18 +1,20 @@
+import Immutable from 'immutable'
 import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
 import logger from 'redux-logger'
-import { syncHistory } from 'react-router-redux'
 import { browserHistory } from 'react-router'
+import thunk from 'redux-thunk'
+import { syncHistory } from 'react-router-redux'
+
 import rootReducer from '../reducers'
 
-export default function configureStore (initialState) {
+export default function configureStore (initialState = Immutable.Map({})) {
   // sync react-router and redux
   const reduxRouterMiddleware = syncHistory(browserHistory)
 
   // apply different middleware in dev and production
   const middleware = process.env.NODE_ENV === 'production'
     ? [ thunk, reduxRouterMiddleware ]
-    : [ thunk, reduxRouterMiddleware, logger({ duration: true }) ]
+    : [ thunk, reduxRouterMiddleware, logger({ duration: true, stateTransformer: (state) => state.toJS() }) ]
 
   const store = createStore(rootReducer, initialState, compose(
     applyMiddleware(...middleware),

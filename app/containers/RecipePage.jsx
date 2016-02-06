@@ -13,10 +13,10 @@ class RecipePage extends React.Component {
   }
 
   render () {
-    if (this.props.recipe.fetching) {
+    if (this.props.recipe.get('fetching')) {
       return (<Loading />)
-    } else if (this.props.recipe.current) {
-      return (<Recipe recipe={this.props.recipe.current} />)
+    } else if (this.props.recipe.get('current')) {
+      return (<Recipe recipe={ this.props.recipe.get('current').toJS() } />)
     } else {
       return <div>Kapott</div>
     }
@@ -34,7 +34,7 @@ RecipePage.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  return { recipe: state.recipe }
+  return { recipe: state.get('recipe') }
 }
 
 export default connect(mapStateToProps)(RecipePage)
