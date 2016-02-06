@@ -2,6 +2,7 @@ import { React } from '../../lib/commonImports.js'
 import { buildImageUrl } from '../../lib/UrlBuilder.js'
 
 import Cover from './cover/Cover.jsx'
+import IngredientsList from './ingredients/IngredientsList.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
 
@@ -13,6 +14,7 @@ const Recipe = (props) => (
       subtitle={ props.recipe.subtitle }
       published={ props.recipe.published }
     />
+    <IngredientsList ingredients={ props.recipe.ingredients } />
     <RecipeFooter/>
   </article>
 )

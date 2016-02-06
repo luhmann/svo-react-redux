@@ -8,7 +8,9 @@ const Cover = (props) => (
 )
 
 Cover.propTypes = {
-  img: React.PropTypes.string
+  src: React.PropTypes.string.isRequired,
+  width: React.PropTypes.number,
+  height: React.PropTypes.number
 }
 
 export default CSSModules(Cover, styles, CSSModuleConfig)
