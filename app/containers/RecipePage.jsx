@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { fetchRecipe } from '../actions/index'
 
 import Loading from '../components/loading/Loading.jsx'
-import Recipe from '../components/Recipe.jsx'
+import Recipe from '../components/recipe/Recipe.jsx'
 
 class RecipePage extends React.Component {
   constructor (props) {

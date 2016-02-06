@@ -18,16 +18,16 @@
         "carbs": 6,
         "difficulty": "medium",
         "images": [{
-            "src": "_MG_0051.jpg",
+            "src": "_MG_0551.jpg",
             "credits": "Jan Florian Dietrich",
             "width": 1024,
-            "height": 990
-        }],
+            "height": 683
+          }],
         "cover": {
-            "src": "_MG_0059.jpg",
+            "src": "_MG_0559.jpg",
             "credits": "Jan Florian Dietrich",
-            "width": 1000,
-            "height": 2000
+            "width": 1024,
+            "height": 683
         },
         "ingredients": [{
             "amount": 1,

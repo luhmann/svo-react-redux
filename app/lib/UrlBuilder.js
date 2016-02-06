@@ -1,5 +1,9 @@
-import * as urls from '../constants/Urls.js'
+import { API_BASE_URL, IMG_BASE_URL } from '../constants/Urls.js'
 
 export function buildRecipeUrl (slug) {
-  return `${urls.API_BASE_URL}/recipe/${slug}`
+  return `${API_BASE_URL}/recipe/${slug}`
+}
+
+export function buildImageUrl (path) {
+  return `${IMG_BASE_URL}/${path}`
 }

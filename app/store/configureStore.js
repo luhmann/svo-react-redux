@@ -12,7 +12,7 @@ export default function configureStore (initialState) {
   // apply different middleware in dev and production
   const middleware = process.env.NODE_ENV === 'production'
     ? [ thunk, reduxRouterMiddleware ]
-    : [ thunk, reduxRouterMiddleware, logger() ]
+    : [ thunk, reduxRouterMiddleware, logger({ duration: true }) ]
 
   const store = createStore(rootReducer, initialState, compose(
     applyMiddleware(...middleware),
