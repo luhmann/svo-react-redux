@@ -37,10 +37,15 @@ const common = {
   },
   plugins: [
     new HtmlwebpackPlugin({
+      appMountId: 'app',
       inject: false,
+      mobile: true,
       template: './app/config/baseTemplate.ejs',
       title: 'Stove vs oven',
-      appMountId: 'app'
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     })
   ]
 }
