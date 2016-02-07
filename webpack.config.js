@@ -1,8 +1,9 @@
 require('dotenv').config()
 const Clean = require('clean-webpack-plugin')
-const HtmlwebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlwebpackPlugin = require('html-webpack-plugin')
 const merge = require('webpack-merge')
+const NpmInstallPlugin = require('npm-install-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
 
@@ -64,6 +65,7 @@ if (TARGET === 'dev' || !TARGET) {
     },
     devtool: '#eval-source-map',
     plugins: [
+      new NpmInstallPlugin({ save: true, saveDev: true }),
       new ExtractTextPlugin('app.css', { allChunks: true }),
       new webpack.HotModuleReplacementPlugin()
     ]
