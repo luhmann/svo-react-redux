@@ -1,9 +1,9 @@
 import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
 import styles from './Cover.styl'
 
-const Cover = (props) => (
+const Cover = ({ src, width, height }) => (
   <div>
-    <img styleName='cover' src={ props.src } width={ props.width } height={props.height} />
+    <img styleName='cover' src={ src } width={ width } height={height} />
   </div>
 )
 
