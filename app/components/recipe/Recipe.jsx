@@ -2,6 +2,7 @@ import { React } from '../../lib/commonImports.js'
 import { buildImageUrl } from '../../lib/UrlBuilder.js'
 
 import Cover from './cover/Cover.jsx'
+import Dessert from './dessert/Dessert.jsx'
 import Duration from './duration/Duration.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
 import Nutrition from './nutrition/Nutrition.jsx'
@@ -34,6 +35,7 @@ const Recipe = ({recipe}) => (
     <Utensils utensils={recipe.utensils} />
     <Preparation preparation={ recipe.preparation } />
     <Wine wine={ recipe.wine } />
+    <Dessert dessert={ recipe.dessert } />
     <RecipeFooter/>
   </article>
 )
