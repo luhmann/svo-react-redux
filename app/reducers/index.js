@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux-immutable'
-import route from './RouteReducer.js'
+
+import error from './ErrorReducer.js'
 import recipe from './RecipeReducer.js'
+import route from './RouteReducer.js'
 
 const rootReducer = combineReducers({
+  error,
   recipe,
   route
 })

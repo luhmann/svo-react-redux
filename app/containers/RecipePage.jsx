@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchRecipe } from '../actions/index'
 import RecipeDataTransformer from '../lib/RecipeDataTransformer.js'
 
+import ErrorPage from './ErrorPage.jsx'
 import Loading from '../components/loading/Loading.jsx'
 import Recipe from '../components/recipe/Recipe.jsx'
 
@@ -16,11 +17,13 @@ class RecipePage extends React.Component {
   render () {
     if (this.props.recipe.fetching) {
       return (<Loading />)
-    } else if (this.props.recipe.current) {
-      return (<Recipe recipe={ this.props.recipe.current } />)
-    } else {
-      return <div>Kapott</div>
     }
+
+    if (this.props.recipe.current) {
+      return (<Recipe recipe={ this.props.recipe.current } />)
+    }
+
+    return <div>Kapott</div>
   }
 
   shouldComponentUpdate (nextProps) {
@@ -35,7 +38,9 @@ RecipePage.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  return { recipe: RecipeDataTransformer(state) }
+  return {
+    recipe: RecipeDataTransformer(state)
+  }
 }
 
 export default connect(mapStateToProps)(RecipePage)

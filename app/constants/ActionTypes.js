@@ -1,2 +1,4 @@
 export const REQUEST_RECIPE = 'REQUEST_RECIPE'
 export const RECEIVE_RECIPE = 'RECEIVE_RECIPE'
+export const ENTER_ERROR = 'ENTER_ERROR'
+export const LEAVE_ERROR = 'LEAVE_ERROR'

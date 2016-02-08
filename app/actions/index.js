@@ -1,5 +1,6 @@
 import { get } from 'superagent'
-import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
+import { REQUEST_RECIPE, RECEIVE_RECIPE, ENTER_ERROR } from '../constants/ActionTypes.js'
+import { CONNECTION_ERROR } from '../constants/ErrorTypes.js'
 import { buildRecipeUrl } from '../lib/UrlBuilder.js'
 
 export function fetchRecipe (slug) {
@@ -10,11 +11,22 @@ export function fetchRecipe (slug) {
       .type('application/json')
       .accept('application/json')
       .end((err, res) => {
+        if (err) {
+          dispatch(emitError({
+            type: CONNECTION_ERROR,
+            details: err
+          }))
+          return;
+        }
+
         try {
           dispatch(receiveRecipe(res.body.recipe))
         } catch (e) {
-          // TODO: Implement redux conform error handling
-          console.log('GET recipe failed', err)
+          console.log('GET recipe failed', e)
+          dispatch(emitError({
+            type: CONNECTION_ERROR,
+            details: e
+          }))
         }
       })
   }
@@ -26,4 +38,8 @@ function requestRecipe () {
 
 function receiveRecipe (recipe) {
   return { type: RECEIVE_RECIPE, recipe }
+}
+
+function emitError (error) {
+  return { type: ENTER_ERROR, error }
 }

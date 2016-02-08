@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from '../components/Title.jsx'
+import ErrorPage from './ErrorPage.jsx'
 
 export default ({ push, children }) => {
   return (
@@ -7,7 +8,11 @@ export default ({ push, children }) => {
       <header>
         <Title text='Stove v Oven' />
       </header>
-      <div>{children}</div>
+      <main>
+        <ErrorPage>
+          { children }
+        </ErrorPage>
+      </main>
       <footer>
         Footer
       </footer>

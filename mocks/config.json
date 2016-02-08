@@ -10,6 +10,9 @@
     "api/v1/recipe/:slug": {
       "mockFile": "recipe/recipe.json",
       "switch": "slug",
+      "switchResponses": {
+        "slugfailure": { "httpStatus": 503, "mockFile": "recipe/failure.json" }
+      },
       "verbs": ["get"]
     }
 }
