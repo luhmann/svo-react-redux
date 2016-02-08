@@ -8,6 +8,7 @@ import Nutrition from './nutrition/Nutrition.jsx'
 import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
+import Utensils from './Utensils/Utensils.jsx'
 
 const Recipe = ({recipe}) => (
   <article>
@@ -29,6 +30,7 @@ const Recipe = ({recipe}) => (
       protein={ recipe.protein }
     />
     <IngredientsList servings={ recipe.servings } ingredients={ recipe.ingredients } />
+    <Utensils utensils={recipe.utensils} />
     <Preparation preparation={ recipe.preparation } />
     <RecipeFooter/>
   </article>
