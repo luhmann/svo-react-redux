@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { fetchRecipe } from '../actions/index'
+import RecipeDataTransformer from '../lib/RecipeDataTransformer.js'
 
 import Loading from '../components/loading/Loading.jsx'
 import Recipe from '../components/recipe/Recipe.jsx'
@@ -9,14 +10,14 @@ import Recipe from '../components/recipe/Recipe.jsx'
 class RecipePage extends React.Component {
   constructor (props) {
     super(props)
-    this.props.dispatch(fetchRecipe(this.props.params.slug))
+    props.dispatch(fetchRecipe(props.params.slug))
   }
 
   render () {
-    if (this.props.recipe.get('fetching')) {
+    if (this.props.recipe.fetching) {
       return (<Loading />)
-    } else if (this.props.recipe.get('current')) {
-      return (<Recipe recipe={ this.props.recipe.get('current').toJS() } />)
+    } else if (this.props.recipe.current) {
+      return (<Recipe recipe={ this.props.recipe.current } />)
     } else {
       return <div>Kapott</div>
     }
@@ -34,7 +35,7 @@ RecipePage.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  return { recipe: state.get('recipe') }
+  return { recipe: RecipeDataTransformer(state) }
 }
 
 export default connect(mapStateToProps)(RecipePage)
