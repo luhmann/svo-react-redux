@@ -3,6 +3,7 @@ import { buildImageUrl } from '../../lib/UrlBuilder.js'
 
 import Cover from './cover/Cover.jsx'
 import Dessert from './dessert/Dessert.jsx'
+import Difficulty from './difficulty/Difficulty.jsx'
 import Duration from './duration/Duration.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
 import Nutrition from './nutrition/Nutrition.jsx'
@@ -26,6 +27,7 @@ const Recipe = ({recipe}) => (
       cooling={ recipe.duration.cooling }
       preparation={ recipe.duration.preparation }
     />
+    <Difficulty difficulty={ recipe.difficulty } />
     <Nutrition
       cal={ recipe.calories }
       carbs={ recipe.carbs }

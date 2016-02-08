@@ -7,6 +7,7 @@ import 'moment-duration-format'
 
 const Duration = ({cooking, cooling, preparation}) => (
   <section>
+    <header>Dauer</header>
     <div>Vorbereitung: {moment.duration(preparation, 's').format('h [hrs], m [min]')}</div>
     <div>Koch-/Backzeit: {moment.duration(cooking, 's').format('h [hrs], m [min]')}</div>
     <div>Abkühlen: {moment.duration(cooling, 's').format('h [hrs], m [min]')}</div>
