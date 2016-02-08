@@ -1,5 +1,5 @@
 import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
-import { Map, fromJS } from 'immutable'
+import { Map } from 'immutable'
 
 const intialState = Map({
   fetching: false,
