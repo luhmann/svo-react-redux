@@ -4,6 +4,7 @@ import { buildImageUrl } from '../../lib/UrlBuilder.js'
 import Cover from './cover/Cover.jsx'
 import Duration from './duration/Duration.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
+import Nutrition from './nutrition/Nutrition.jsx'
 import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
@@ -20,6 +21,12 @@ const Recipe = ({recipe}) => (
       cooking={ recipe.duration.cooking }
       cooling={ recipe.duration.cooling }
       preparation={ recipe.duration.preparation }
+    />
+    <Nutrition
+      cal={ recipe.calories }
+      carbs={ recipe.carbs }
+      fat={ recipe.fat }
+      protein={ recipe.protein }
     />
     <IngredientsList servings={ recipe.servings } ingredients={ recipe.ingredients } />
     <Preparation preparation={ recipe.preparation } />
