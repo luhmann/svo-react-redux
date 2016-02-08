@@ -9,6 +9,7 @@ import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
 import Utensils from './Utensils/Utensils.jsx'
+import Wine from './Wine/Wine.jsx'
 
 const Recipe = ({recipe}) => (
   <article>
@@ -32,6 +33,7 @@ const Recipe = ({recipe}) => (
     <IngredientsList servings={ recipe.servings } ingredients={ recipe.ingredients } />
     <Utensils utensils={recipe.utensils} />
     <Preparation preparation={ recipe.preparation } />
+    <Wine wine={ recipe.wine } />
     <RecipeFooter/>
   </article>
 )

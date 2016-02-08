@@ -128,7 +128,7 @@
           "großer Topf",
           "Kochlöffel"
         ],
-        "wine-recommendation": "Zum Gulasch reicht man traditionell einen schweren Rotwein wie z.B. einen Cabernet Sauvignon",
-        "dessert-recommendation": "Wer nach so viel herzhaftem Essen noch Lust auf was Süßes hat, reicht dazu unseren [Kaiserschmarren mit Limettensauce](/demo/foo)"
+        "wine": "Zum Gulasch reicht man traditionell einen schweren Rotwein wie z.B. einen Cabernet Sauvignon",
+        "dessert": "Wer nach so viel herzhaftem Essen noch Lust auf was Süßes hat, reicht dazu unseren [Kaiserschmarren mit Limettensauce](/demo/foo)"
     }
 }
