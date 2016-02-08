@@ -11,9 +11,9 @@ function recipe (state = intialState, action) {
     case REQUEST_RECIPE:
       return state.set('fetching', true)
     case RECEIVE_RECIPE:
-      return Map({
+      return state.merge({
         fetching: false,
-        current: fromJS(action.recipe)
+        current: action.recipe
       })
   }
 
