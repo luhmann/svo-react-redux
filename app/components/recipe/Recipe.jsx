@@ -6,6 +6,7 @@ import Dessert from './dessert/Dessert.jsx'
 import Duration from './duration/Duration.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
 import Nutrition from './nutrition/Nutrition.jsx'
+import Quickinfo from './quickinfo/Quickinfo.jsx'
 import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
@@ -31,6 +32,7 @@ const Recipe = ({recipe}) => (
       fat={ recipe.fat }
       protein={ recipe.protein }
     />
+    <Quickinfo quickinfo={ recipe.quickinfo } />
     <IngredientsList servings={ recipe.servings } ingredients={ recipe.ingredients } />
     <Utensils utensils={recipe.utensils} />
     <Preparation preparation={ recipe.preparation } />
