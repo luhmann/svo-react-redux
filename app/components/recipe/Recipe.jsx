@@ -2,6 +2,7 @@ import { React } from '../../lib/commonImports.js'
 import { buildImageUrl } from '../../lib/UrlBuilder.js'
 
 import Cover from './cover/Cover.jsx'
+import Duration from './duration/Duration.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
 import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
@@ -15,7 +16,12 @@ const Recipe = ({recipe}) => (
       subtitle={ recipe.subtitle }
       published={ recipe.published }
     />
-    <IngredientsList ingredients={ recipe.ingredients } />
+    <Duration
+      cooking={ recipe.duration.cooking }
+      cooling={ recipe.duration.cooling }
+      preparation={ recipe.duration.preparation }
+    />
+    <IngredientsList servings={ recipe.servings } ingredients={ recipe.ingredients } />
     <Preparation preparation={ recipe.preparation } />
     <RecipeFooter/>
   </article>

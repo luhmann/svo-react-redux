@@ -10,13 +10,17 @@
           "name": "Peter Pan",
           "image": null
         },
-        "time": "144000",
+        "duration": {
+          "preparation": 2400,
+          "cooking": 1200,
+          "cooling": 600
+        },
         "servings": 6,
         "calories": 320,
         "protein": 36,
         "fat": 15,
         "carbs": 6,
-        "difficulty": "medium",
+        "difficulty": 2,
         "images": [{
             "src": "_MG_0551.jpg",
             "credits": "Jan Florian Dietrich",

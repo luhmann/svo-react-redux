@@ -3,9 +3,10 @@ import styles from './IngredientsList.styl'
 
 import Ingredient from './Ingredient.jsx'
 
-const IngredientsList = (props) => (
+const IngredientsList = ({ ingredients, servings }) => (
   <section>
-    { props.ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
+    <div>Zutaten ({servings} Portionen)</div>
+    { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
   </section>
 )
 
