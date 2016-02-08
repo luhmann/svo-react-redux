@@ -9,10 +9,8 @@ import App from './containers/App.jsx'
 import Home from './components/Home.jsx'
 import RecipePage from './containers/RecipePage.jsx'
 
-const store = configureStore()
-
 render(
-  <Provider store={store}>
+  <Provider store={configureStore()}>
     <Router history={browserHistory}>
       <Route path='/' component={ App }>
         <IndexRoute component={ Home }/>
