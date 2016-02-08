@@ -3,18 +3,20 @@ import { buildImageUrl } from '../../lib/UrlBuilder.js'
 
 import Cover from './cover/Cover.jsx'
 import IngredientsList from './ingredients/IngredientsList.jsx'
+import Preparation from './preparation/Preparation.jsx'
 import RecipeHeader from './header/RecipeHeader.jsx'
 import RecipeFooter from './RecipeFooter.jsx'
 
-const Recipe = (props) => (
+const Recipe = ({recipe}) => (
   <article>
-    <Cover src={ buildImageUrl(props.recipe.cover.src) } width={ props.recipe.cover.width } height={ props.recipe.cover.height } />
+    <Cover src={ buildImageUrl(recipe.cover.src) } width={ recipe.cover.width } height={ recipe.cover.height } />
     <RecipeHeader
-      title={ props.recipe.title }
-      subtitle={ props.recipe.subtitle }
-      published={ props.recipe.published }
+      title={ recipe.title }
+      subtitle={ recipe.subtitle }
+      published={ recipe.published }
     />
-    <IngredientsList ingredients={ props.recipe.ingredients } />
+    <IngredientsList ingredients={ recipe.ingredients } />
+    <Preparation preparation={ recipe.preparation } />
     <RecipeFooter/>
   </article>
 )
