@@ -16,11 +16,11 @@ export function fetchRecipe (slug) {
             type: CONNECTION_ERROR,
             details: err
           }))
-          return;
+          return
         }
 
         try {
-          dispatch(receiveRecipe(res.body.recipe))
+          dispatch(receiveRecipe(res.body[0]))
         } catch (e) {
           console.log('GET recipe failed', e)
           dispatch(emitError({
