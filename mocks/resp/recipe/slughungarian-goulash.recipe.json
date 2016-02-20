@@ -1,8 +1,9 @@
-[{
+{
   "slug": "hungarian-goulash",
   "title": "Ungarisches Saft-Gulasch",
   "subtitle": "Ein leckerer Klassiker für die Massen, der Jung und Alt begeistert",
-  "published": 1454258757,
+  "hash": "3460f804",
+  "published": "2016-02-20T13:56:58.041Z",
   "category": "dinner",
   "author": {
     "name": "Peter Pan",
@@ -124,4 +125,4 @@
   ],
   "wine": "Zum Gulasch reicht man traditionell einen schweren Rotwein wie z.B. einen Cabernet Sauvignon",
   "dessert": "Wer nach so viel herzhaftem Essen noch Lust auf was Süßes hat, reicht dazu unseren [Kaiserschmarren mit Limettensauce](/demo/foo)"
-}]
+}

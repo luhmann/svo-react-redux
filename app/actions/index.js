@@ -20,7 +20,7 @@ export function fetchRecipe (slug) {
         }
 
         try {
-          dispatch(receiveRecipe(res.body[0]))
+          dispatch(receiveRecipe(res.body))
         } catch (e) {
           console.log('GET recipe failed', e)
           dispatch(emitError({
