@@ -3,7 +3,7 @@ import styles from './Cover.styl'
 
 const Cover = ({ src, width, height }) => (
   <div>
-    <img styleName='cover' src={ src } width={ width } height={height} />
+    <img styleName='cover' src={src}/>
   </div>
 )
 
