@@ -1,0 +1,15 @@
+{
+  "cloudinary": {
+    "cloud_name": "svo",
+    "api_key": "885191739148781"
+  },
+  "api": {
+    "protocol": "http",
+    "host": "localhost:7878",
+    "baseUrl": "api",
+    "version": "1",
+    "endpoints": {
+      "recipes": "recipes"
+    }
+  }
+}

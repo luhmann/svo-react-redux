@@ -7,7 +7,7 @@
   "staticDirectory": "./mocks/assets",
   "staticPath": "/assets",
   "webServices": {
-    "api/v1/recipe/:slug": {
+    "api/v1/recipes/:slug": {
       "mockFile": "recipe/recipe.json",
       "switch": "slug",
       "switchResponses": {

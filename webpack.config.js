@@ -24,6 +24,11 @@ const common = {
         include: PATHS.app
       },
       {
+        test: /\.json$/,
+        loaders: ['json'],
+        include: PATHS.app
+      },
+      {
         test: /\.styl$/,
         loader: ExtractTextPlugin.extract(
           'style',
@@ -66,8 +71,13 @@ if (TARGET === 'dev' || !TARGET) {
       host: process.env.HOST || 'localhost',
       port: process.env.PORT || 8080
     },
-    devtool: '#eval-source-map',
+    devtool: '#source-map',
     plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('dev')
+        }
+      }),
       new NpmInstallPlugin({ save: true, saveDev: true }),
       new ExtractTextPlugin('app.css', { allChunks: true }),
       new webpack.HotModuleReplacementPlugin()
@@ -83,6 +93,11 @@ if (TARGET === 'build') {
       chunkFilename: '[chunkhash].js'
     },
     plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
+      }),
       new Clean([PATHS.build]),
       new ExtractTextPlugin('styles.css?[chunkhash]'),
       new webpack.optimize.DedupePlugin(),
