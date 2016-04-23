@@ -4,7 +4,7 @@ import { CONNECTION_ERROR } from '../constants/ErrorTypes.js'
 import { buildRecipeUrl } from '../lib/UrlBuilder.js'
 
 export function fetchRecipe (slug) {
-  return dispatch => {
+  return (dispatch) => {
     dispatch(requestRecipe())
 
     get(buildRecipeUrl(slug))

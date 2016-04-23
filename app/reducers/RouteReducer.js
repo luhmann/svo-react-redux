@@ -4,7 +4,7 @@ import { UPDATE_LOCATION } from 'react-router-redux'
 let initialState
 
 initialState = Immutable.fromJS({
-  location: undefined
+  location: {}
 })
 
 export default (state = initialState, action) => {
