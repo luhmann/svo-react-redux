@@ -12,7 +12,7 @@ class LoadingPage extends React.Component {
   }
 
   render () {
-    if (!this.props.loading.token) {
+    if (!this.props.loading.token || this.props.loading.fetching) {
       return (<Loading />)
     } else {
       return (<div>{this.props.children}</div>)

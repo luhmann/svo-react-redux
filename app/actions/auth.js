@@ -3,8 +3,6 @@ import fetch from 'isomorphic-fetch'
 import { REQUEST_AUTH_TOKEN, RECEIVE_AUTH_TOKEN } from '../constants/ActionTypes.js'
 import { buildAuthUrl } from '../lib/UrlBuilder.js'
 import * as storage from '../lib/localStorageAdapter.js'
-import { emitError } from './error.js'
-import { CONNECTION_ERROR } from '../constants/ErrorTypes.js'
 import { handleErrors, mapErrors } from '../lib/handle-fetch-errors'
 import config from '../config/env'
 
