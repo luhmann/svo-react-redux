@@ -18,3 +18,7 @@ export function buildImageUrl (path) {
 export function buildCloudinaryUrl (objectId) {
   return cl.url(objectId, { secure: true, width: 1024, crop: 'fit' })
 }
+
+export function buildAuthUrl () {
+  return `${API_BASE_URL}/${config.api.endpoints.auth}`
+}

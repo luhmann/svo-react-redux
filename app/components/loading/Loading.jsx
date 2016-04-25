@@ -2,7 +2,7 @@ import { React, CSSModules, CSSModuleConfig } from '../../lib/commonImports.js'
 import styles from './Loading.styl'
 
 const Loading = (props) => (
-  <section styleName='loading'>Lade Rezept</section>
+  <section styleName='loading'>{(props.text) ? props.text : 'Lade Daten…'}</section>
 )
 
 Loading.propTypes = {}

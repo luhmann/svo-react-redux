@@ -1,0 +1,13 @@
+{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1NzFhMjMzNDE2MDEzZDkwYzM4YzZjYTUiLCJpYXQiOjE0NjE1NzYxMTYsImV4cCI6MTQ2MTY2MjUxNiwiaXNzIjoiZmVhdGhlcnMifQ.2AgBOy7-bUKt4wJcqNSqpXBg3_1PVfFB8utHrtrAvEQ",
+  "data": {
+    "_id": "571a233416013d90c38c6ca5",
+    "email": "jfd@daenen4.de",
+    "__v": 0,
+    "updatedAt": "2016-04-22T13:12:20.857Z",
+    "createdAt": "2016-04-22T13:12:20.857Z",
+    "roles": [
+      "write"
+    ]
+  }
+}

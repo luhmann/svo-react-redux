@@ -6,14 +6,19 @@
   "logRequestHeaders": false,
   "staticDirectory": "./mocks/assets",
   "staticPath": "/assets",
+  "allowedHeaders": ["Content-Type", "x-authorization"],
   "webServices": {
     "api/v1/recipes/:slug": {
       "mockFile": "recipe/recipe.json",
-      "switch": "slug",
+      "switch": ["x-authorization", "slug"],
       "switchResponses": {
         "slugfailure": { "httpStatus": 503, "mockFile": "recipe/failure.json" }
       },
       "verbs": ["get"]
+    },
+    "api/v1/auth/local": {
+      "mockFile": "user/local.json",
+      "verbs": ["post"]
     }
 }
 }

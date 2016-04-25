@@ -9,7 +9,13 @@
     "baseUrl": "api",
     "version": "1",
     "endpoints": {
-      "recipes": "recipes"
+      "recipes": "recipes",
+      "auth": "auth/local"
+    },
+    "auth": {
+      "email": "user@svo.com",
+      "password": "test",
+      "header": "x-authorization"
     }
   }
 }

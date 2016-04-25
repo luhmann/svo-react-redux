@@ -12,12 +12,12 @@ import RecipePage from './containers/RecipePage.jsx'
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store, {
-    selectLocationState (state) {
-        return state.getIn([
-            'route',
-            'location'
-        ]).toJS()
-    }
+  selectLocationState (state) {
+    return state.getIn([
+      'route',
+      'location'
+    ]).toJS()
+  }
 })
 
 render(

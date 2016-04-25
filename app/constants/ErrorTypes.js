@@ -1,1 +1,2 @@
 export const CONNECTION_ERROR = 'CONNECTION_ERROR'
+export const NOT_FOUND = 'NOT_FOUND'

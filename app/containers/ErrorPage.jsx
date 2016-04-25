@@ -12,9 +12,9 @@ class ErrorPage extends React.Component {
 
   render () {
     if (this.props.error.type) {
-      return (<Error message={ ErrorMessageMapper(this.props.error) } />)
+      return (<Error message={ErrorMessageMapper(this.props.error)} />)
     } else {
-      return (<div>{ this.props.children }</div>)
+      return (<div>{this.props.children}</div>)
     }
   }
 }
