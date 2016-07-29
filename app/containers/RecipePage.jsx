@@ -10,7 +10,10 @@ import Recipe from '../components/recipe/Recipe.jsx'
 class RecipePage extends React.Component {
   constructor (props) {
     super(props)
-    props.dispatch(fetchRecipe(props.params.slug))
+  }
+
+  componentWillMount() {
+    this.props.dispatch(fetchRecipe(this.props.params.slug))
   }
 
   render () {

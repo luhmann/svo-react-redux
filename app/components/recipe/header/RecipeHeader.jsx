@@ -1,18 +1,25 @@
-import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
-import styles from './RecipeHeader.styl'
-
 import moment from 'moment'
 import 'moment/locale/de'
 
-const RecipeHeader = (props) => (
+import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import { If, Then } from 'react-if'
+
+import {Cover} from '../index.js'
+import styles from './RecipeHeader.styl'
+
+const RecipeHeader = ({cover, title, subtitle, published}) => (
   <header>
-    <h1 styleName='title'>{ props.title }</h1>
-    { props.subtitle ? (<div styleName='subtitle'>{ props.subtitle }</div>) : '' }
-    <div>Veröffentlicht am: { moment(props.published).format('Do MMMM YYYY, HH:mm:ss') }</div>
+    <Cover img={cover}/>
+    <h2 styleName='title'>{title}</h2>
+    <If condition={!!subtitle}>
+      <Then><div styleName='subtitle'>{subtitle}</div></Then>
+    </If>
+    <div>Veröffentlicht am: { moment(published).format('Do MMMM YYYY, HH:mm:ss') }</div>
   </header>
 )
 
 RecipeHeader.propTypes = {
+  cover: React.PropTypes.object,
   title: React.PropTypes.string,
   subtitle: React.PropTypes.string,
   published: React.PropTypes.number

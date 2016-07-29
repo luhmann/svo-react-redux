@@ -9,7 +9,7 @@ const Wine = ({ wine }) => (
 )
 
 Wine.propTypes = {
-  wine: React.PropTypes.string.isRequired
+  wine: React.PropTypes.string
 }
 
 export default CSSModules(Wine, styles, CSSModuleConfig)

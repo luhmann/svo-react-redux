@@ -7,7 +7,7 @@ import logoSVG from 'assets/logo.svg'
 
 const Header = () => (
   <header styleName="header">
-    <SVGInline styleName="logo" svg={logoSVG} />
+    <SVGInline styleName="logo" svg={logoSVG} title="Stove vs. Oven" />
   </header>
 )
 

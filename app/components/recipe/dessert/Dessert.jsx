@@ -9,7 +9,7 @@ const Dessert = ({ dessert }) => (
 )
 
 Dessert.propTypes = {
-  dessert: React.PropTypes.string.isRequired
+  dessert: React.PropTypes.string
 }
 
 export default CSSModules(Dessert, styles, CSSModuleConfig)

@@ -1,5 +1,4 @@
-/* eslint-disable */
-:global *
+*
   position: relative
 
 // from normalize.css
@@ -9,7 +8,7 @@
  *    without disabling user zoom.
  */
 
-:global html
+html
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
   font-family: sans-serif
@@ -17,26 +16,21 @@
 /**
  * Remove default margin.
  */
-:global body
+body
   margin: 0
 
 /**
  * Remove the gray background color from active links in IE 10.
  */
 
-:global a
+a
   background-color: transparent
 
+  &:active,
+  &:hover
+    outline: 0
 
 /**
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
-
-:global a:active,
-:global a:hover
-  outline: 0
-
-:global h1
-  font-size: 2em
-  margin: 0.67em 0
