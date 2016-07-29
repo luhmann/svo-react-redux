@@ -1,24 +1,25 @@
-import React from 'react'
-import Title from '../components/Title.jsx'
+import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+
+import {Header, Footer} from '../components/shared/index'
 import ErrorPage from './ErrorPage.jsx'
 import LoadingPage from './LoadingPage'
 
-export default ({ push, children }) => {
+import styles from './App.styl';
+
+const App = ({ children }) => {
   return (
-    <div>
-      <header>
-        <Title text='Stove v Oven' />
-      </header>
-      <main>
+    <div styleName='app'>
+      <Header/>
+      <main styleName='content'>
         <LoadingPage>
           <ErrorPage>
             {children}
           </ErrorPage>
         </LoadingPage>
       </main>
-      <footer>
-        Footer
-      </footer>
+      <Footer/>
     </div>
   )
 }
+
+export default CSSModules(App, styles, CSSModuleConfig)

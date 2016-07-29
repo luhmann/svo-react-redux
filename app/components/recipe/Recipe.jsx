@@ -1,5 +1,5 @@
-import {React} from '../../lib/commonImports.js'
-import {buildCloudinaryUrl} from '../../lib/UrlBuilder.js'
+import {React} from 'lib/commonImports.js'
+import { If, Then } from 'react-if';
 
 import Cover from './cover/Cover.jsx'
 import Dessert from './dessert/Dessert.jsx'
@@ -16,7 +16,7 @@ import Wine from './Wine/Wine.jsx'
 
 const Recipe = ({recipe}) => (
   <article>
-    <Cover src={buildCloudinaryUrl(recipe.cover.objectId)}/>
+    <Cover img={recipe.cover}/>
     <RecipeHeader title={recipe.title} subtitle={recipe.subtitle} published={recipe.published}/>
     <Duration cooking={recipe.duration.cooking} cooling={recipe.duration.cooling} preparation={recipe.duration.preparation}/>
     <Difficulty difficulty={recipe.difficulty}/>
@@ -25,8 +25,12 @@ const Recipe = ({recipe}) => (
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
     <Utensils utensils={recipe.utensils}/>
     <Preparation preparation={recipe.preparation}/>
-    <Wine wine={recipe.wine}/>
-    <Dessert dessert={recipe.dessert}/>
+    <If condition={recipe.wine}>
+      <Then><Wine wine={recipe.wine}/></Then>
+    </If>
+    <If condition={recipe.dessert}>
+      <Then><Dessert dessert={recipe.dessert}/></Then>
+    </If>
     <RecipeFooter/>
   </article>
 )

@@ -6,16 +6,24 @@ const merge = require('webpack-merge')
 const NpmInstallPlugin = require('npm-install-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const validate = require('webpack-validator')
 
 const TARGET = process.env.npm_lifecycle_event
 process.env.BABEL_ENV = TARGET
 const PATHS = {
   app: path.join(__dirname, 'app'),
+  styles: path.join(__dirname, 'app', 'global.styl'),
   build: path.join(__dirname, 'build')
 }
 
+const extractCssModules = new ExtractTextPlugin('components.css')
+const extractGlobalCss = new ExtractTextPlugin('global.css')
+
 const common = {
-  entry: PATHS.app,
+  entry: {
+    app: PATHS.app,
+    globalCss: PATHS.styles
+  },
   module: {
     loaders: [
       {
@@ -30,19 +38,35 @@ const common = {
       },
       {
         test: /\.styl$/,
-        loader: ExtractTextPlugin.extract(
+        loader: extractCssModules.extract(
           'style',
           'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!stylus'
-        )
+        ),
+        exclude: PATHS.styles
+      },
+      {
+        test: /\.styl$/,
+        loader: extractGlobalCss.extract('style', 'css!stylus'),
+        include: PATHS.styles
+      },
+      {
+        test: /\.svg$/,
+        loader: 'raw-loader',
+        include: PATHS.app
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.styl']
+    extensions: ['', '.js', '.jsx', '.styl'],
+    alias: {
+      lib: path.resolve(PATHS.app, 'lib'),
+      assets: path.resolve(PATHS.app, 'assets'),
+      styles: path.resolve(PATHS.app, 'styles')
+    }
   },
   output: {
     path: PATHS.build,
-    filename: 'svo.js'
+    filename: '[name].js'
   },
   plugins: [
     new HtmlwebpackPlugin({
@@ -60,14 +84,13 @@ const common = {
 }
 
 if (TARGET === 'dev' || !TARGET) {
-  module.exports = merge(common, {
+  module.exports = validate(merge(common, {
     devServer: {
       contentBase: PATHS.build,
       historyApiFallback: true,
       hot: true,
       inline: true,
-      progress: true,
-      stats: 'errors-only',
+      stats: 'minimal',
       host: process.env.HOST || 'localhost',
       port: process.env.PORT || 8080
     },
@@ -79,14 +102,17 @@ if (TARGET === 'dev' || !TARGET) {
         }
       }),
       new NpmInstallPlugin({ save: true, saveDev: true }),
-      new ExtractTextPlugin('app.css', { allChunks: true }),
-      new webpack.HotModuleReplacementPlugin()
+      extractCssModules,
+      extractGlobalCss,
+      new webpack.HotModuleReplacementPlugin({
+        multiStep: true
+      })
     ]
-  })
+  }))
 }
 
 if (TARGET === 'build') {
-  module.exports = merge(common, {
+  module.exports = validate(merge(common, {
     output: {
       path: PATHS.build,
       filename: '[name].[chunkhash].js',
@@ -107,5 +133,5 @@ if (TARGET === 'build') {
         }
       })
     ]
-  })
+  }))
 }
