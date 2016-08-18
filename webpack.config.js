@@ -51,7 +51,7 @@ const common = {
       },
       {
         test: /\.svg$/,
-        loader: 'raw-loader',
+        loaders: ['raw-loader'],
         include: PATHS.app
       }
     ]
@@ -61,7 +61,8 @@ const common = {
     alias: {
       lib: path.resolve(PATHS.app, 'lib'),
       assets: path.resolve(PATHS.app, 'assets'),
-      styles: path.resolve(PATHS.app, 'styles')
+      styles: path.resolve(PATHS.app, 'styles'),
+      sharedComponents: path.resolve(PATHS.app, 'components', 'shared')
     }
   },
   output: {
