@@ -5,12 +5,13 @@ import moment from 'moment'
 import 'moment/locale/de'
 import 'moment-duration-format'
 
+import Gauge from 'sharedComponents/Gauge/Gauge.jsx'
+
 const Duration = ({cooking, cooling, preparation}) => (
-  <section>
-    <header>Dauer</header>
-    <div>Vorbereitung: {moment.duration(preparation, 's').format('h [hrs], m [min]')}</div>
-    <div>Koch-/Backzeit: {moment.duration(cooking, 's').format('h [hrs], m [min]')}</div>
-    <div>Abkühlen: {moment.duration(cooling, 's').format('h [hrs], m [min]')}</div>
+  <section styleName='duration'>
+    <Gauge filledPercent={ preparation / 3600 } title="Vorbereit." label={moment.duration(preparation, 's').format('h [hrs], m [min]')} />
+    <Gauge filledPercent={ cooking / 3600 } title="Backzeit" label={moment.duration(cooking, 's').format('h [hrs], m [min]')} />
+    <Gauge filledPercent={ cooling / 3600 } title="Ruhezeit" label={moment.duration(cooling, 's').format('h [hrs], m [min]')} />
   </section>
 )
 

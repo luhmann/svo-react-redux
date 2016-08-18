@@ -1,9 +1,14 @@
 @require '~styles/variables.styl'
 
 .app
+  background-color $c-background-color
+  display flex
+  flex-direction column
   margin 0 auto
   max-width 414px
+  min-height 100vh
   overflow hidden
 
 .content
+  min-height "calc(100vh - %s)" % $d-footer-height
   margin-top -1 * $d-header-height

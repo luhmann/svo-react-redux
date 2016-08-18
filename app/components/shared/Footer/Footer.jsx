@@ -3,7 +3,7 @@ import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 import styles from './Footer.styl'
 
 const Footer = () => (
-  <footer>
+  <footer styleName='footer'>
     Footer
   </footer>
 )

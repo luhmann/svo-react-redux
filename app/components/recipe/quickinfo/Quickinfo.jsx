@@ -1,15 +1,18 @@
+import SVGInline from 'react-svg-inline'
 import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
 import styles from './Quickinfo.styl'
 
+import skinnyIcon from './icons/skinny.svg'
+import quickIcon from './icons/quick.svg'
+import restTimeIcon from './icons/rest_time.svg'
+import vegetarianIcon from './icons/vegetarian.svg'
+
 const Quickinfo = ({ quickinfo }) => (
-  <section>
-    <div>Schnellinformation</div>
-    <div>
-      kalorienarm: { quickinfo.skinny ? 'Ja' : 'Nein' } /
-      glutenfrei: { quickinfo.glutenFree ? 'Ja' : 'Nein' } /
-      längere Ruhezeit: { quickinfo.restTime ? 'Ja' : 'Nein' } /
-      vegetarisch: { quickinfo.vegetarian ? 'Ja' : 'Nein' }
-    </div>
+  <section styleName='quickinfo'>
+    <SVGInline styleName={(quickinfo.skinny) ? 'icon-active' : 'icon'} svg={skinnyIcon} cleanup={true} classSuffix='' title='kalorienarm' />
+    <SVGInline styleName={(quickinfo.vegetarian) ? 'icon-active' : 'icon'} svg={vegetarianIcon} cleanup={true} classSuffix='' title='vegetarisch' />
+    <SVGInline styleName={(quickinfo.quick) ? 'icon-active' : 'icon'} svg={quickIcon} cleanup={true} classSuffix='' title='schnell' />
+    <SVGInline styleName={(quickinfo.restTime) ? 'icon-active' : 'icon'} svg={restTimeIcon} cleanup={true} classSuffix='' title='zeitaufwendig' />
   </section>
 )
 

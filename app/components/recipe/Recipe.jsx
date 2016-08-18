@@ -3,7 +3,7 @@ import { If, Then } from 'react-if';
 
 import {
   Dessert,
-  Difficulty,
+  Description,
   Duration,
   IngredientsList,
   Nutrition,
@@ -11,17 +11,18 @@ import {
   Preparation,
   RecipeHeader,
   RecipeFooter,
+  Subtitle,
   Utensils,
   Wine
 } from './'
 
 const Recipe = ({recipe}) => (
   <article>
-    <RecipeHeader title={recipe.title} subtitle={recipe.subtitle} published={recipe.published} cover={recipe.cover}/>
+    <RecipeHeader title={recipe.title} category={recipe.category} cover={recipe.cover} quickinfo={recipe.quickinfo} />
+    <Subtitle text={recipe.subtitle} />
     <Duration cooking={recipe.duration.cooking} cooling={recipe.duration.cooling} preparation={recipe.duration.preparation}/>
-    <Difficulty difficulty={recipe.difficulty}/>
     <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
-    <Quickinfo quickinfo={recipe.quickinfo}/>
+    <Description text={recipe.description} />
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
     <Utensils utensils={recipe.utensils}/>
     <Preparation preparation={recipe.preparation}/>

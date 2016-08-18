@@ -1,0 +1,22 @@
+@require '~styles/variables.styl'
+
+$icon-height = 20px
+$icon-width = 20px
+
+.quickinfo
+  display flex
+  justify-content space-between
+  margin $d-recipe-header-margins auto 0
+  width 36vw
+
+.icon
+  svg
+    fill darken($c-white, 30%)
+    height $icon-height
+    width $icon-width
+
+.icon-active
+  svg
+    fill $c-white
+    height $icon-height
+    width $icon-width
