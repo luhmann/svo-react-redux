@@ -26,8 +26,8 @@ const Recipe = ({recipe}) => (
     </If>
     <Description text={recipe.description} />
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
-    <Utensils utensils={recipe.utensils}/>
     <Preparation preparation={recipe.preparation}/>
+    <Utensils utensils={recipe.utensils}/>
     <If condition={!!recipe.wine}>
       <Then><Wine wine={recipe.wine}/></Then>
     </If>

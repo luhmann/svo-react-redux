@@ -1,5 +1,6 @@
 import moment from 'moment'
 import 'moment/locale/de'
+import nl2br from 'react-nl2br'
 
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 import { If, Then } from 'react-if'
@@ -11,7 +12,7 @@ const RecipeHeader = ({cover, title, category, quickinfo}) => (
   <header styleName='recipe-header'>
     <Cover img={cover}/>
     <section styleName='meta'>
-      <h2 styleName='title'>{title}</h2>
+      <h2 styleName='title'>{ nl2br(title) }</h2>
       <Category type={category} />
       <Quickinfo quickinfo={quickinfo}/>
     </section>

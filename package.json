@@ -78,6 +78,7 @@
     "react-css-modules": "^3.7.4",
     "react-dom": "^15.0.1",
     "react-if": "^2.1.0",
+    "react-nl2br": "^0.2.0",
     "react-redux": "^4.1.2",
     "react-router": "2.3.0",
     "react-router-redux": "^4.0.2",

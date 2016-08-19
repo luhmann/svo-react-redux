@@ -4,9 +4,14 @@ import styles from './IngredientsList.styl'
 import Ingredient from './Ingredient.jsx'
 
 const IngredientsList = ({ ingredients, servings }) => (
-  <section>
-    <div>Zutaten ({servings} Portionen)</div>
-    { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
+  <section styleName='root'>
+    <header styleName='header'>
+      Zutaten für {servings} { (servings === 1) ? 'Portion' : 'Portionen' }
+    </header>
+    <div stlyeName='ingredients'>
+        { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
+    </div>
+    
   </section>
 )
 
