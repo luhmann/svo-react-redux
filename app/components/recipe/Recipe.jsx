@@ -1,5 +1,4 @@
 import {React} from 'lib/commonImports.js'
-import { If, Then } from 'react-if';
 
 import {
   Dessert,
@@ -21,19 +20,25 @@ const Recipe = ({recipe}) => (
     <RecipeHeader title={recipe.title} category={recipe.category} cover={recipe.cover} quickinfo={recipe.quickinfo} />
     <Subtitle text={recipe.subtitle} />
     <Duration cooking={recipe.duration.cooking} cooling={recipe.duration.cooling} preparation={recipe.duration.preparation}/>
-    <If condition={!!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein}>
-      <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
-    </If>
-    <Description text={recipe.description} />
+    {
+      !!recipe.description &&
+      <Description text={recipe.description} />
+    }
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
     <Preparation preparation={recipe.preparation}/>
     <Utensils utensils={recipe.utensils}/>
-    <If condition={!!recipe.wine && !!recipe.wine.name && !!recipe.wine.description}>
-      <Then><Wine name={recipe.wine.name} description={recipe.wine.description}/></Then>
-    </If>
-    <If condition={!!recipe.dessert && !!recipe.dessert.name && !!recipe.dessert.description}>
-      <Then><Dessert name={recipe.dessert.name} description={recipe.dessert.description}/></Then>
-    </If>
+    {
+      !!recipe.wine &&
+      <Wine name={recipe.wine.name} description={recipe.wine.description}/>
+    }
+    {
+      !!recipe.dessert &&
+      <Dessert name={recipe.dessert.name} description={recipe.dessert.description}/>
+    }
+    { 
+      !!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein &&
+      <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
+    }
     <RecipeFooter/>
   </article>
 )
