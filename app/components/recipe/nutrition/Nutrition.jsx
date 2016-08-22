@@ -1,10 +1,13 @@
+import SVGInline from 'react-svg-inline'
 import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
 import styles from './Nutrition.styl'
 
+import kcalIcon from './icons/kcal.svg'
+
 const Nutrition = ({carbs, cal, fat, protein}) => (
-  <section>
-    <div>Nährwerte pro Portion</div>
-    <div>Kalorien { cal } / Eiweiß { protein }g / Kohlenhydrate { carbs }g / Fett { fat }g</div>
+  <section styleName="root">
+    <SVGInline styleName="icon" svg={kcalIcon} title="Nährwerte"/>
+    <div styleName="calories">Kalorien { cal } / Eiweiß { protein }g / Kohlenhydrate { carbs }g / Fett { fat }g</div>
   </section>
 )
 
