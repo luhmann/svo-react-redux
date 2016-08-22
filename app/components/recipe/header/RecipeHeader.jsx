@@ -3,7 +3,6 @@ import 'moment/locale/de'
 import nl2br from 'react-nl2br'
 
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
-import { If, Then } from 'react-if'
 
 import { Cover, Category, Quickinfo } from '../index.js'
 import styles from './RecipeHeader.styl'
@@ -16,8 +15,6 @@ const RecipeHeader = ({cover, title, category, quickinfo}) => (
       <Category type={category} />
       <Quickinfo quickinfo={quickinfo}/>
     </section>
-    
-    
   </header>
 )
 
