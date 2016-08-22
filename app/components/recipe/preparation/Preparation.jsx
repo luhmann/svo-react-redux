@@ -4,8 +4,11 @@ import styles from './Preparation.styl'
 import Step from './Step.jsx'
 
 const Preparation = ({ preparation }) => (
-  <section>
-    { preparation.map((step, index) => <Step key={index} step={ step } />) }
+  <section styleName="root">
+    <header styleName='header'>Zubereitung</header>
+    <div>
+      { preparation.map((step, index) => <Step key={index} step={ step } />) }
+    </div>
   </section>
 )
 

@@ -1,21 +1,10 @@
-@require '~styles/variables.styl'
+@require '~styles/shared.styl'
 
 .root
-  display flex
-  font-family $t-font-text
-  margin-bottom 13px
+  @extend .list-box__item
 
 .amount
-  border-right 1px solid $c-background
-  display inline-block
-  font-weight 500
-  min-width 54px
-  padding 4px 6px 0 
-  text-align right
+  @extend .list-box__item__left
 
 .label
-  border-bottom 1px solid $c-background
-  flex-grow 1
-  display inline-block 
-  margin-left 7px
-  padding 4px 0
+  @extend .list-box__item__right

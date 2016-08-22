@@ -28,11 +28,11 @@ const Recipe = ({recipe}) => (
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
     <Preparation preparation={recipe.preparation}/>
     <Utensils utensils={recipe.utensils}/>
-    <If condition={!!recipe.wine}>
-      <Then><Wine wine={recipe.wine}/></Then>
+    <If condition={!!recipe.wine && !!recipe.wine.name && !!recipe.wine.description}>
+      <Then><Wine name={recipe.wine.name} description={recipe.wine.description}/></Then>
     </If>
-    <If condition={!!recipe.dessert}>
-      <Then><Dessert dessert={recipe.dessert}/></Then>
+    <If condition={!!recipe.dessert && !!recipe.dessert.name && !!recipe.dessert.description}>
+      <Then><Dessert name={recipe.dessert.name} description={recipe.dessert.description}/></Then>
     </If>
     <RecipeFooter/>
   </article>

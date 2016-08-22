@@ -1,19 +1,7 @@
-@require '~styles/variables.styl'
+@require '~styles/shared.styl'
 
 .root
-  background-color $c-white
-  border-radius $d-border-radius
-  margin 0 $d-modules-v-padding $d-modules-margin-bottom
-  padding 10px 16px 
+  @extend .list-box
 
 .header
-  border-bottom 1px solid $c-background
-  color $c-text
-  font-size 1.5em
-  font-family $t-font-text
-  font-weight 600
-  margin-bottom 11px
-  padding-bottom 2px
-
-.ingredients
-  display table
+  @extend .list-box__header

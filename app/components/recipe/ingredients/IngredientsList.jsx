@@ -8,7 +8,7 @@ const IngredientsList = ({ ingredients, servings }) => (
     <header styleName='header'>
       Zutaten für {servings} { (servings === 1) ? 'Portion' : 'Portionen' }
     </header>
-    <div stlyeName='ingredients'>
+    <div styleName='ingredients'>
         { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
     </div>
     
