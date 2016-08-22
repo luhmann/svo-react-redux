@@ -1,10 +1,10 @@
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 
 import ResponsiveImage from 'sharedComponents/ResponsiveImage/ResponsiveImage.jsx'
-import styles from './Cover.styl'
+import styles from './Images.styl'
 
 
-const Cover = ({ img }) => (
+const Images = ({ images }) => (
   <ResponsiveImage 
     styleName='cover'
     styleId='cover' 
@@ -12,8 +12,8 @@ const Cover = ({ img }) => (
   />
 )
 
-Cover.propTypes = {
-  img: React.PropTypes.object.isRequired
+Images.propTypes = {
+  images: React.PropTypes.object.isRequired
 }
 
 export default CSSModules(Cover, styles, CSSModuleConfig)
