@@ -53,7 +53,12 @@ const common = {
         test: /\.svg$/,
         loaders: ['raw-loader'],
         include: PATHS.app
-      }
+      },
+      { 
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff",
+        include: PATHS.app
+      },
     ]
   },
   resolve: {
