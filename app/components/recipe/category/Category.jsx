@@ -3,7 +3,11 @@ import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 import styles from './Category.styl'
 
 const categoryMapping = {
-  dessert: 'Dessert & Backen'
+  breakfast: 'Frühstück',
+  lunch: 'Mittagessen',
+  dinner: 'Abendessen',
+  dessert: 'Dessert & Backen',
+  snack: 'Kleinigkeiten & Snacks'
 }
 
 const Category = ({ type }) => (
