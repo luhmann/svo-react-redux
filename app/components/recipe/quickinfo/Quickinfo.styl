@@ -11,12 +11,16 @@ $icon-width = 20px
 
 .icon
   svg
-    fill darken($c-white, 30%)
     height $icon-height
     width $icon-width
+    path, rect, polygon 
+      fill darken($c-white, 30%)
+      stroke @fill
 
 .icon-active
   svg
-    fill $c-white
     height $icon-height
     width $icon-width
+    path, rect, polygon 
+      fill $c-white
+      stroke @fill

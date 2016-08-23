@@ -11,8 +11,8 @@ const Quickinfo = ({ quickinfo }) => (
   <section styleName='quickinfo'>
     <SVGInline styleName={(quickinfo.skinny) ? 'icon-active' : 'icon'} svg={skinnyIcon} cleanup={true} classSuffix='' title='kalorienarm' />
     <SVGInline styleName={(quickinfo.vegetarian) ? 'icon-active' : 'icon'} svg={vegetarianIcon} cleanup={true} classSuffix='' title='vegetarisch' />
-    <SVGInline styleName={(quickinfo.quick) ? 'icon-active' : 'icon'} svg={quickIcon} cleanup={true} classSuffix='' title='schnell' />
-    <SVGInline styleName={(quickinfo.restTime) ? 'icon-active' : 'icon'} svg={restTimeIcon} cleanup={true} classSuffix='' title='zeitaufwendig' />
+    <SVGInline styleName={(quickinfo.quick) ? 'icon-active' : 'icon'} svg={quickIcon} cleanup={true} cleanupExceptions={['width', 'height']} classSuffix='' title='schnell' />
+    <SVGInline styleName={(quickinfo.restTime) ? 'icon-active' : 'icon'} svg={restTimeIcon} cleanup={true} cleanupExceptions={['width', 'height']} classSuffix='' title='zeitaufwendig' />
   </section>
 )
 
