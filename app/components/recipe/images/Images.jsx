@@ -5,15 +5,16 @@ import styles from './Images.styl'
 
 
 const Images = ({ images }) => (
-  <ResponsiveImage 
-    styleName='cover'
-    styleId='cover' 
-    img={img}
-  />
+  <div styleName="root">
+    { 
+      images.map((img, index) => ( <ResponsiveImage key={index} styleName='image' img={img} sizes="98.2vw" />))
+    }
+  </div> 
+  
 )
 
 Images.propTypes = {
-  images: React.PropTypes.object.isRequired
+  images: React.PropTypes.array.isRequired
 }
 
-export default CSSModules(Cover, styles, CSSModuleConfig)
+export default CSSModules(Images, styles, CSSModuleConfig)

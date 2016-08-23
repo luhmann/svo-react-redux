@@ -4,6 +4,7 @@ import {
   Dessert,
   Description,
   Duration,
+  Images,
   IngredientsList,
   Nutrition,
   Quickinfo,
@@ -38,6 +39,10 @@ const Recipe = ({recipe}) => (
     { 
       !!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein &&
       <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
+    }
+    {
+      !!recipe.images &&
+      <Images images={recipe.images} />
     }
     <RecipeFooter/>
   </article>

@@ -1,0 +1,12 @@
+@require '~styles/variables.styl'
+
+.root
+  line-height 0
+  padding $d-modules-margin-bottom $d-modules-v-padding 
+
+.image
+  display inline-block
+  margin-bottom $d-modules-v-padding
+  object-fit cover
+  width 100vw - (2 * $d-modules-v-padding)
+  height @width * (2/3)
