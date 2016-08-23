@@ -5,11 +5,11 @@ import styles from './Images.styl'
 
 
 const Images = ({ images }) => (
-  <div styleName="root">
+  <section styleName="root">
     { 
       images.map((img, index) => ( <ResponsiveImage key={index} styleName='image' img={img} sizes="98.2vw" />))
     }
-  </div> 
+  </section> 
   
 )
 
