@@ -9,7 +9,7 @@ const IngredientsList = ({ ingredients, servings }) => (
       Zutaten für {servings} { (servings === 1) ? 'Portion' : 'Portionen' }
     </header>
     <div styleName='ingredients'>
-        { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />)}
+        { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />) }
     </div>
     
   </section>
