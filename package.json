@@ -9,7 +9,7 @@
     "lint": "standard --verbose | snazzy",
     "mocks": "apimocker -c ./mocks/config.json",
     "start": "npm run mocks & npm run dev",
-    "test": "npm run lint && npm run test:unit",
+    "test": "npm run test:unit",
     "test:unit": "babel-tape-runner -r './app/config/testSetup.js' 'app/**/*.spec.js' | tap-diff"
   },
   "repository": {
