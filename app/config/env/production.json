@@ -5,7 +5,7 @@
   },
   "api": {
     "protocol": "http",
-    "host": "localhost:3030",
+    "host": "svo.dev:3030",
     "baseUrl": "api",
     "version": "1",
     "endpoints": {
@@ -17,5 +17,9 @@
       "password": "test",
       "header": "x-authorization"
     }
+  },
+  "url": {
+    "protocol": "https",
+    "host": "stove-vs-oven.com"
   }
 }

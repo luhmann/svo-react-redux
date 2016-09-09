@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 import { REQUEST_RECIPE, RECEIVE_RECIPE } from '../constants/ActionTypes.js'
-import { buildRecipeUrl } from '../lib/UrlBuilder.js'
+import { buildRecipeApiUrl } from '../lib/UrlBuilder.js'
 import config from '../config/env'
 import { handleErrors, mapErrors } from '../lib/handle-fetch-errors/'
 
@@ -8,7 +8,7 @@ export function fetchRecipe (slug) {
   return (dispatch, getState) => {
     dispatch(requestRecipe())
 
-    fetch(buildRecipeUrl(slug), {
+    fetch(buildRecipeApiUrl(slug), {
       headers: {
         [config.api.auth.header]: getState().getIn(['loading', 'token'])
       }

@@ -16,6 +16,8 @@ import {
   Wine
 } from './'
 
+import Sharing from 'sharedComponents/Sharing/Sharing.jsx'
+
 const Recipe = ({recipe}) => (
   <article>
     <RecipeHeader title={recipe.title} category={recipe.category} cover={recipe.cover} quickinfo={recipe.quickinfo} />
@@ -44,6 +46,7 @@ const Recipe = ({recipe}) => (
       !!recipe.images &&
       <Images images={recipe.images} />
     }
+    <Sharing slug={recipe.slug} hash={recipe.hash} />
     <RecipeFooter/>
   </article>
 )

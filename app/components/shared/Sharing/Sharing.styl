@@ -1,0 +1,41 @@
+@require '~styles/variables.styl'
+
+.root
+  font-size 1.5em
+  font-family $t-font-text
+  padding $d-modules-margin-bottom $d-modules-v-padding 
+
+.link
+  display flex
+  margin-bottom 0.5em
+  width 100%
+
+.url
+  border 1px solid $c-mean-gray
+  border-radius 4px
+  color $c-text
+  flex-grow 1
+  font-size 0.75em
+  height 3rem
+  margin-right 4px
+  padding 0 8px
+  -webkit-appearance none
+
+.copy
+  background-color $c-mean-gray
+  cursor pointer
+  display flex
+  align-items center
+  justify-content center
+  border-radius 4px
+  height 3rem
+  width 4rem
+  &:active, &:hover
+    background-color $c-accent
+
+.icon
+  fill $c-white
+  height 2rem
+
+.explanation
+  font-size 0.75rem

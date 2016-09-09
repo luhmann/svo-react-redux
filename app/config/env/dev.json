@@ -5,7 +5,7 @@
   },
   "api": {
     "protocol": "http",
-    "host": "localhost:7878",
+    "host": "svo.dev:7878",
     "baseUrl": "api",
     "version": "1",
     "endpoints": {
@@ -17,5 +17,9 @@
       "password": "test",
       "header": "x-authorization"
     }
+  },
+  "url": {
+    "protocol": "http",
+    "host": "svo.dev"
   }
 }

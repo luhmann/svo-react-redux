@@ -40,7 +40,7 @@ const common = {
         test: /\.styl$/,
         loader: extractCssModules.extract(
           'style',
-          'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!stylus'
+          'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!stylus'
         ),
         exclude: PATHS.styles
       },
@@ -61,6 +61,14 @@ const common = {
       },
     ]
   },
+  postcss: [
+    // require('postcss-initial')({
+    //   reset: 'inherited' // reset only inherited rules
+    // }),
+    // Deactivated on 09-09-16 becuase not completely understood
+    // require('postcss-autoreset'),
+    require('autoprefixer')({browsers: ['last 2 versions']})
+  ],
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl'],
     alias: {
