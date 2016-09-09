@@ -49,7 +49,7 @@ class Sharing extends React.Component {
         </div>
         <div styleName="explanation">
           Zum Sharen kannst du die hier abgebildete URL kopieren und auf einer Seite deiner Wahl posten.
-          { ifClipboardSupported('Ein Klick auf den Button kopiert die URL direkt in deine Zwischenablage.') }
+          { ifClipboardSupported(' Ein Klick auf den Button kopiert die URL direkt in deine Zwischenablage.') }
         </div>
       </section>
     )
