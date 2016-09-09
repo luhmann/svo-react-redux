@@ -10,7 +10,7 @@
     "mocks": "apimocker -c ./mocks/config.json",
     "start": "npm run mocks & npm run dev",
     "test": "npm run test:unit",
-    "test:unit": "babel-tape-runner -r './app/config/testSetup.js' 'app/**/*.spec.js' | tap-diff"
+    "test:unit": "NODE_ENV=test babel-tape-runner -r './app/config/testSetup.js' 'app/**/*.spec.js' | tap-diff"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-object-assign": "^6.3.13",
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-plugin-webpack-alias": "^2.1.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.1",
