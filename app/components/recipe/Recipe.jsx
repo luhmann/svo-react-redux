@@ -1,3 +1,4 @@
+import renderIf from 'render-if'
 import {React} from 'lib/commonImports.js'
 
 import {
@@ -24,27 +25,32 @@ const Recipe = ({recipe}) => (
     <Subtitle text={recipe.subtitle} />
     <Duration cooking={recipe.duration.cooking} cooling={recipe.duration.cooling} preparation={recipe.duration.preparation}/>
     {
-      !!recipe.description &&
-      <Description text={recipe.description} />
+      renderIf(!!recipe.description)(() => (
+        <Description text={recipe.description} />
+      ))
     }
     <IngredientsList servings={recipe.servings} ingredients={recipe.ingredients}/>
     <Preparation preparation={recipe.preparation}/>
     <Utensils utensils={recipe.utensils}/>
     {
-      !!recipe.wine &&
-      <Wine name={recipe.wine.name} description={recipe.wine.description}/>
+      renderIf(!!recipe.wine)(() =>(
+        <Wine name={recipe.wine.name} description={recipe.wine.description}/>
+      ))
     }
     {
-      !!recipe.dessert &&
-      <Dessert name={recipe.dessert.name} description={recipe.dessert.description}/>
+      renderIf(!!recipe.dessert)(() => (
+        <Dessert name={recipe.dessert.name} description={recipe.dessert.description}/>
+      ))
     }
     { 
-      !!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein &&
-      <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
+      renderIf(!!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein)(() => (
+        <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
+      ))
     }
     {
-      !!recipe.images &&
-      <Images images={recipe.images} />
+      renderIf(!!recipe.images)(() => (
+        <Images images={recipe.images} />
+      ))
     }
     <Sharing slug={recipe.slug} hash={recipe.hash} />
     <RecipeFooter/>
