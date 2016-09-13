@@ -1,13 +1,12 @@
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 
-import ResponsiveImage from 'sharedComponents/ResponsiveImage/ResponsiveImage.jsx'
+import ExternalResponsiveImage from 'sharedComponents/ExternalResponsiveImage/ExternalResponsiveImage.jsx'
 import styles from './Cover.styl'
 
 
 const Cover = ({ img }) => (
-  <ResponsiveImage 
+  <ExternalResponsiveImage 
     styleName='cover'
-    styleId='cover' 
     img={img}
   />
 )

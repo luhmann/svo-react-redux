@@ -1,4 +1,4 @@
-import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
+import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
 import styles from './Duration.styl'
 
 import moment from 'moment'

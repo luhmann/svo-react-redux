@@ -10,7 +10,7 @@
   "webServices": {
     "api/v1/recipes/:slug": {
       "mockFile": "recipe/recipe.json",
-      "switch": ["x-authorization", "slug"],
+      "switch": ["slug"],
       "switchResponses": {
         "slugfailure": { "httpStatus": 503, "mockFile": "recipe/failure.json" }
       },

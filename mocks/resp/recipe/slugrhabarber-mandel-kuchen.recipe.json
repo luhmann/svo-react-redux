@@ -1,0 +1,287 @@
+{
+  "slug": "rhabarber-mandel-kuchen",
+  "title": "Rhabarber-Mandel-Kuchen\nmit brauner Butter",
+  "subtitle": "Ein einfacher, fluffiger und saftiger Kuchen für die Rhabarber-Zeit",
+  "description": "Saurer Rhabarber, oppulente Mandeln und sahnige Butter verleihen diesem außergewöhnlichen Kuchen seine große Klasse. Darum steht er jedes Jahr wenn es an der Zeit ist unseren Rhabarber aus dem Garten zu verbrauchen ganz oben auf unserer Liste",
+  "category": "dessert",
+  "author": {
+    "email": "jfd@daenen4.de",
+    "__v": 0,
+    "updatedAt": "2016-04-22T13:12:20.857Z",
+    "createdAt": "2016-04-22T13:12:20.857Z"
+  },
+  "duration": {
+    "preparation": 1800,
+    "cooking": 2100,
+    "cooling": 600,
+    "_id": "571e27a0c5fa1bdd01f33e94"
+  },
+  "servings": 8,
+  "difficulty": 1,
+  "cover": {
+    "objectId": "lh1nmgmqugmlopswifqt",
+    "credits": "Jan Florian Dietrich",
+    "_id": "571e27a0c5fa1bdd01f33e93"
+  },
+  "quickinfo": {
+    "skinny": false,
+    "glutenFree": false,
+    "restTime": true,
+    "vegetarian": true,
+    "_id": "571e27a0c5fa1bdd01f33e6c"
+  },
+  "hash": "1a490c86",
+  "wine": {
+    "name": "2006 Riesling Mosel",
+    "description": "Ein fruchtiger und doch frischer Gaumenspieler erfreut zum sauren Rhabarber das Gemüt.",
+    "_id": "57d3ac7ef84e71bd08bc80aa"
+  },
+  "dessert": {
+    "name": "Himbeer Cupcakes",
+    "description": "Wer nach alldem noch Lust auf mehr Süßes hat, findet Linderung in diesen cremig-milden Cupcakes.",
+    "_id": "57d3ac7ef84e71bd08bc80a9"
+  },
+  "__v": 0,
+  "utensils": [
+    "große Schüssel",
+    "kleine Schüssel",
+    "Springform Ø24cm",
+    "Mixer",
+    "Sieb für Puderzucker",
+    "Küchenwaage"
+  ],
+  "preparation": [
+    {
+      "step": 1,
+      "description": "Die Butter in einer kleinen Casserole bei mittlerer Hitze schmelzen und dann unter Rühren aufkochen bis sie braun wird. Beiseite stellen",
+      "_id": "571e27a0c5fa1bdd01f33e80",
+      "ingredients": [
+        {
+          "amount": 115,
+          "unit": "g",
+          "label": "Butter",
+          "_id": "571e27a0c5fa1bdd01f33e81"
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "description": "Den Ofen auf 175°C vorheizen. Eine 24cm große Sprinform buttern und mehlen.",
+      "_id": "571e27a0c5fa1bdd01f33e7f",
+      "ingredients": []
+    },
+    {
+      "step": 3,
+      "description": "In einer großen Schüssel das Mehl, die gemahlenen Mandeln, den Zucker, das Backpulver, das Natron und das Salz miteinander verrühren.",
+      "_id": "571e27a0c5fa1bdd01f33e78",
+      "ingredients": [
+        {
+          "amount": 170,
+          "unit": "g",
+          "label": "Mehl",
+          "_id": "571e27a0c5fa1bdd01f33e7e"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "label": "gemahlene Mandeln",
+          "_id": "571e27a0c5fa1bdd01f33e7d"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "label": "Zucker",
+          "_id": "571e27a0c5fa1bdd01f33e7c"
+        },
+        {
+          "amount": 2,
+          "unit": "TL",
+          "label": "Backpulver",
+          "_id": "571e27a0c5fa1bdd01f33e7b"
+        },
+        {
+          "amount": 0.25,
+          "unit": "TL",
+          "label": "Natron",
+          "_id": "571e27a0c5fa1bdd01f33e7a"
+        },
+        {
+          "amount": 0.25,
+          "unit": "TL",
+          "label": "Salz",
+          "_id": "571e27a0c5fa1bdd01f33e79"
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "description": "In einer mittleren Schüssel die Milch, die Eier, die Vanille und die gebräunte Butter miteinander vermischen.",
+      "_id": "571e27a0c5fa1bdd01f33e73",
+      "ingredients": [
+        {
+          "amount": 120,
+          "unit": "ml",
+          "label": "Milch",
+          "_id": "571e27a0c5fa1bdd01f33e77"
+        },
+        {
+          "amount": 1,
+          "unit": "TL",
+          "label": "Vanille",
+          "_id": "571e27a0c5fa1bdd01f33e76"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "label": "große Eier",
+          "_id": "571e27a0c5fa1bdd01f33e75"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "label": "gebräunte Butter",
+          "_id": "571e27a0c5fa1bdd01f33e74"
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "description": "Die feuchten Zutaten zu den trockenen Zutaten geben und unterheben. Dann den geschälten und kleingeschnittenen Rhabarber zugeben.",
+      "_id": "571e27a0c5fa1bdd01f33e71",
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "label": "Rhabarber, geschält und gewürfelt",
+          "_id": "571e27a0c5fa1bdd01f33e72"
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "description": "Den Kuchenteig in die vorbereitete Springform geben und mit den Mandelblättchen bestreuen. Den Kuchen für 30-35min backen. Stäbchenprobe machen.",
+      "_id": "571e27a0c5fa1bdd01f33e6f",
+      "ingredients": [
+        {
+          "amount": 30,
+          "unit": "g",
+          "label": "Mandelblättchen",
+          "_id": "571e27a0c5fa1bdd01f33e70"
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "description": "Den Kuchen 10 Minuten abkühlen lassen. Vor dem Servieren mit Puderzucker bestreuen.",
+      "_id": "571e27a0c5fa1bdd01f33e6d",
+      "ingredients": [
+        {
+          "amount": null,
+          "unit": null,
+          "label": "Puderzucker",
+          "_id": "571e27a0c5fa1bdd01f33e6e"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "amount": 115,
+      "unit": "g",
+      "label": "Butter",
+      "_id": "571e27a0c5fa1bdd01f33e8e"
+    },
+    {
+      "amount": 170,
+      "unit": "g",
+      "label": "Mehl",
+      "_id": "571e27a0c5fa1bdd01f33e8d"
+    },
+    {
+      "amount": 70,
+      "unit": "g",
+      "label": "gemahlene Mandeln",
+      "_id": "571e27a0c5fa1bdd01f33e8c"
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "label": "Zucker",
+      "_id": "571e27a0c5fa1bdd01f33e8b"
+    },
+    {
+      "amount": 2,
+      "unit": "TL",
+      "label": "Backpulver",
+      "_id": "571e27a0c5fa1bdd01f33e8a"
+    },
+    {
+      "amount": 0.25,
+      "unit": "TL",
+      "label": "Natron",
+      "_id": "571e27a0c5fa1bdd01f33e89"
+    },
+    {
+      "amount": 0.25,
+      "unit": "TL",
+      "label": "Salz",
+      "_id": "571e27a0c5fa1bdd01f33e88"
+    },
+    {
+      "amount": 120,
+      "unit": "ml",
+      "label": "Milch",
+      "_id": "571e27a0c5fa1bdd01f33e87"
+    },
+    {
+      "amount": 1,
+      "unit": "TL",
+      "label": "Vanille",
+      "_id": "571e27a0c5fa1bdd01f33e86"
+    },
+    {
+      "amount": 2,
+      "unit": null,
+      "label": "große Eier",
+      "_id": "571e27a0c5fa1bdd01f33e85"
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "label": "Rhabarber, geschält und gewürfelt",
+      "_id": "571e27a0c5fa1bdd01f33e84"
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "label": "Mandelblättchen",
+      "_id": "571e27a0c5fa1bdd01f33e83"
+    },
+    {
+      "amount": null,
+      "unit": null,
+      "label": "Puderzucker zum Bestäuben",
+      "_id": "571e27a0c5fa1bdd01f33e82"
+    }
+  ],
+  "images": [
+    {
+      "objectId": "wlshsqd4ytpcyignf3gb",
+      "credits": "Jan Florian Dietrich",
+      "_id": "571e27a0c5fa1bdd01f33e91"
+    },
+    {
+      "objectId": "fms93vyghz3ltjpuvopr",
+      "credits": "Jan Florian Dietrich",
+      "_id": "571e27a0c5fa1bdd01f33e90"
+    },
+    {
+      "objectId": "oq5uejq9klfh6g8wz54n",
+      "credits": "Jan Florian Dietrich",
+      "_id": "571e27a0c5fa1bdd01f33e8f"
+    }
+  ],
+  "published": 1461594016022,
+  "modified": 1461594016022,
+  "created": 1461594016022
+}

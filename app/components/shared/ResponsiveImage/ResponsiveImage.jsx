@@ -1,25 +1,40 @@
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
-import { buildResImageUrl } from 'lib/UrlBuilder.js'
 
-const buildSrcSet = (objectId, sizes) => {
-  return sizes
-    .map((size) => (
-      `${buildResImageUrl(objectId, size)} ${size}w`
-    ))
-    .join(', ');
+import RESPONSIVE_IMAGE_SIZES from '../../../constants/Common.js'
+
+const SIZES_CONFIG_STRING = RESPONSIVE_IMAGE_SIZES
+  .map((size) => (`sizes[]=${size}w`))
+  .join('')
+
+class ResponsiveImage extends React.Component {
+  constructor(props) {
+    super(props)
+
+    let { path } = props;
+
+    this.responsiveSet = require(`resize-image?${SIZES_CONFIG_STRING}&placeholder=20&blur=40!${path}`)
+    this.img = require(`${path}`)
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+
+  render() {
+    return (
+      <div>
+        <img 
+          src={this.responsiveSet.placeholder}
+          style={{
+            opacity: (this.state.loaded ? 1 : 0)
+          }}
+          />
+      </div>
+      
+    )
+  }
+
 }
 
-const ResponsiveImage = ({ img, className, srcset = [414, 1024, 1280, 1366, 1920, 2500], sizes = '100vw' }) => (
-  <img 
-    className={className}
-    src={buildResImageUrl(img.objectId)}
-    srcSet={buildSrcSet(img.objectId, srcset)}
-    sizes={sizes}
-  />
-)
-
-ResponsiveImage.propTypes = {
-  img: React.PropTypes.object.isRequired
-}
-
-export default ResponsiveImage;
+export default ResponsiveImage
