@@ -59,6 +59,13 @@ const common = {
         loader: "url-loader?limit=10000&mimetype=application/font-woff",
         include: PATHS.app
       },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        loaders: [
+            'file?hash=sha512&digest=hex&name=[hash].[ext]',
+            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false&progrssive=true'
+        ]
+      },
     ]
   },
   postcss: [
