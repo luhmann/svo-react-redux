@@ -6,19 +6,17 @@ module.exports = {
   resolve: {
     alias: {
       '@components': path.resolve(PROJECT_ROOT, 'components'),
-      'lib': path.resolve(PROJECT_ROOT, 'lib')
+      lib: path.resolve(PROJECT_ROOT, 'lib'),
+      styles: path.resolve(PROJECT_ROOT, 'styles')
     }
   },
   module: {
     loaders: [
-      {
-        test: /\.styl$/,
-        loader: extractCssModules.extract(
-          'style',
-          'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!stylus'
-        ),
-        exclude: PATHS.styles
-      }
+     {
+        test: /\.svg$/,
+        loaders: ['raw-loader'],
+        include: PROJECT_ROOT 
+      } 
     ] 
   }
 }

@@ -1,24 +1,39 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import { React } from 'lib/commonImports.js'
+import styled from 'styled-components'
 
+import { dimensions, colors } from 'styles/variables.js'
 import {Header, Footer} from '../components/shared/index'
 import ErrorPage from './ErrorPage.jsx'
 import LoadingPage from './LoadingPage'
 
-import styles from './App.styl'
+const AppWrapper = styled.div`
+  background-color: ${colors.background};
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 414px;
+  min-height: 100vh;
+  overflow: hidden;
+`
+
+const Main = styled.main`
+  min-height: calc(100vh - ${dimensions.footerHeight});
+  margin-top: -${dimensions.headerHeight};
+`
 
 const App = ({ children }) => {
   return (
-    <div styleName='app'>
+    <AppWrapper>
       <Header/>
-      <main styleName='content'>
+      <Main>
         <LoadingPage>
           <ErrorPage>
             {children}
           </ErrorPage>
         </LoadingPage>
-      </main>
+      </Main>
       <Footer/>
-    </div>
+    </AppWrapper>
   )
 }
 
@@ -26,4 +41,4 @@ App.propTypes = {
   children: React.PropTypes.element.isRequired
 }
 
-export default CSSModules(App, styles, CSSModuleConfig)
+export default App

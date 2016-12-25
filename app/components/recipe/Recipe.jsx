@@ -51,7 +51,7 @@ const Recipe = ({recipe}) => (
         <Images images={recipe.images} />
       ))
     }
-    <Sharing slug={recipe.slug} hash={recipe.hash} />
+    <Sharing slug={recipe.slug} isClipboardSupported={document.queryCommandSupported('copy')} />
     <RecipeFooter/>
   </article>
 )
