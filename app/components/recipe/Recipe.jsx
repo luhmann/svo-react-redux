@@ -8,7 +8,6 @@ import {
   Images,
   IngredientsList,
   Nutrition,
-  Quickinfo,
   Preparation,
   RecipeHeader,
   RecipeFooter,
@@ -33,7 +32,7 @@ const Recipe = ({recipe}) => (
     <Preparation preparation={recipe.preparation}/>
     <Utensils utensils={recipe.utensils}/>
     {
-      renderIf(!!recipe.wine)(() =>(
+      renderIf(!!recipe.wine)(() => (
         <Wine name={recipe.wine.name} description={recipe.wine.description}/>
       ))
     }
@@ -42,7 +41,7 @@ const Recipe = ({recipe}) => (
         <Dessert name={recipe.dessert.name} description={recipe.dessert.description}/>
       ))
     }
-    { 
+    {
       renderIf(!!recipe.calories && !!recipe.carbs && !!recipe.fat && !!recipe.protein)(() => (
         <Nutrition cal={recipe.calories} carbs={recipe.carbs} fat={recipe.fat} protein={recipe.protein}/>
       ))

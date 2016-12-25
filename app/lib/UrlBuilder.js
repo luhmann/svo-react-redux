@@ -21,7 +21,7 @@ export function buildResImageUrl (objectId, width = null) {
   }
 
   if (width) {
-    options.width = width;
+    options.width = width
   }
 
   return cl.url(objectId, options)
@@ -31,6 +31,6 @@ export function buildAuthUrl () {
   return `${API_BASE_URL}/${config.api.endpoints.auth}`
 }
 
-export function buildRecipeUrl(slug) {
+export function buildRecipeUrl (slug) {
   return `${BASE_URL}/${slug}`
 }

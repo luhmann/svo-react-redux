@@ -1,5 +1,3 @@
-import moment from 'moment'
-import 'moment/locale/de'
 import nl2br from 'react-nl2br'
 
 import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'

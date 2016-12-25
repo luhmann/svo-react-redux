@@ -4,12 +4,12 @@ import styles from './Ingredient.styl'
 
 const mapAmount = (amount) => {
   const mappingTable = {
-    '0.25': '¼', 
+    '0.25': '¼',
     '0.75': '¾',
     '0.5': '½'
   }
 
-  return mappingTable[amount] || amount
+  return mappingTable[amount] || amount
 }
 
 const Ingredient = ({ ingredient }) => (
@@ -20,7 +20,7 @@ const Ingredient = ({ ingredient }) => (
     <span styleName="label">
       { ingredient.label }
     </span>
-     
+
   </div>
 )
 

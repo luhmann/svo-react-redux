@@ -1,4 +1,4 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import { React } from 'lib/commonImports.js'
 
 import RESPONSIVE_IMAGE_SIZES from '../../../constants/Common.js'
 
@@ -7,10 +7,10 @@ const SIZES_CONFIG_STRING = RESPONSIVE_IMAGE_SIZES
   .join('')
 
 class ResponsiveImage extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
-    let { path } = props;
+    let { path } = props
 
     this.responsiveSet = require(`resize-image?${SIZES_CONFIG_STRING}&placeholder=20&blur=40!${path}`)
     this.img = require(`${path}`)
@@ -20,21 +20,22 @@ class ResponsiveImage extends React.Component {
     }
   }
 
-
-  render() {
+  render () {
     return (
       <div>
-        <img 
+        <img
           src={this.responsiveSet.placeholder}
           style={{
             opacity: (this.state.loaded ? 1 : 0)
           }}
           />
       </div>
-      
     )
   }
+}
 
+ResponsiveImage.propTypes = {
+  path: React.PropTypes.string.isRequired
 }
 
 export default ResponsiveImage

@@ -14,4 +14,8 @@ const Category = ({ type }) => (
   <div styleName='category'>{ categoryMapping[type] }</div>
 )
 
+Category.propTypes = {
+  type: React.PropTypes.string.isRequired
+}
+
 export default CSSModules(Category, styles, CSSModuleConfig)

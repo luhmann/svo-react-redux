@@ -8,11 +8,11 @@ import Loading from '../components/loading/Loading.jsx'
 import Recipe from '../components/recipe/Recipe.jsx'
 
 class RecipePage extends React.Component {
-  constructor (props) {
-    super(props)
-  }
+  // constructor (props) {
+  //   super(props)
+  // }
 
-  componentWillMount() {
+  componentWillMount () {
     this.props.dispatch(fetchRecipe(this.props.params.slug))
   }
 

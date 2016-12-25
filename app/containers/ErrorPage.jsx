@@ -6,9 +6,9 @@ import ErrorMessageMapper from '../lib/ErrorMessageMapper.js'
 import Error from '../components/Error/Error.jsx'
 
 class ErrorPage extends React.Component {
-  constructor (props) {
-    super(props)
-  }
+  // constructor (props) {
+  //   super(props)
+  // }
 
   render () {
     if (this.props.error.type) {

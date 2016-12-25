@@ -11,32 +11,32 @@ const ifClipboardSupported = renderIf(document.queryCommandSupported('copy'))
 
 class Sharing extends React.Component {
   constructor (props) {
-    super(props);
+    super(props)
 
     this.state = {
       copied: false
     }
   }
 
-  selectText(event) {
+  selectText (event) {
     this._url.focus()
     this._url.select()
     this._url.setSelectionRange(0, 9999)
   }
 
-  copyToClipboard() {
+  copyToClipboard () {
     this.selectText()
     document.execCommand('copy')
-    
+
     this.setState({ copied: true })
   }
 
-  render() {
+  render () {
     return (
       <section styleName="root">
         <div styleName="link">
           <input
-            ref={(c) => this._url = c }
+            ref={(c) => { this._url = c } }
             styleName="url"
             value={buildRecipeUrl(this.props.slug)}
             readOnly
@@ -56,5 +56,8 @@ class Sharing extends React.Component {
   }
 }
 
+Sharing.propTypes = {
+  slug: React.PropTypes.string.isRequired
+}
 
 export default CSSModules(Sharing, styles, CSSModuleConfig)

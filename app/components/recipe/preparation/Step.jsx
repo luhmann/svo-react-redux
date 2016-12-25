@@ -1,7 +1,7 @@
 import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
 import styles from './Step.styl'
 
-import Ingredient from '../ingredients/Ingredient.jsx'
+// import Ingredient from '../ingredients/Ingredient.jsx'
 
 const Step = ({ step }) => (
   <div key={ step.step } styleName="root">
@@ -12,7 +12,7 @@ const Step = ({ step }) => (
       step.ingredients
         ? (<div>{ step.ingredients.map((ingredient, index) =>
             (<Ingredient key ={index} ingredient={ingredient} />))}</div>)
-        : '' */ 
+        : '' */
     }
 
    {

@@ -1,0 +1,22 @@
+{
+  "extends": ["standard", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "rules": {
+  },
+  "plugins": [
+    "react"
+  ]
+}

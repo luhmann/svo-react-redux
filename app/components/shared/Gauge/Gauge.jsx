@@ -8,9 +8,9 @@ const Gauge = ({ filledPercent, title, label, radius = 2, width = 6, height = 6 
   return (
     <div styleName="container">
       <svg styleName="svg" width={`${width}em`} height={`${height}em`}>
-        <circle styleName="background" r={`${radius}em`} cx={ `${width/2}em` } cy={ `${height/2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset="0em"></circle>
-        <circle styleName="cover" r={`${radius}em`} cx={ `${width/2}em` } cy={ `${height/2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset={`${offset}em`}></circle>
-        <circle styleName="center" r={`${+radius + 0.9}em`} cx={ `${width/2}em` } cy={ `${height/2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset="0em"></circle>
+        <circle styleName="background" r={`${radius}em`} cx={ `${width / 2}em` } cy={ `${height / 2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset="0em"></circle>
+        <circle styleName="cover" r={`${radius}em`} cx={ `${width / 2}em` } cy={ `${height / 2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset={`${offset}em`}></circle>
+        <circle styleName="center" r={`${+radius + 0.9}em`} cx={ `${width / 2}em` } cy={ `${height / 2}em` } fill="transparent" strokeDasharray={`${cirumference}em`} strokeDashoffset="0em"></circle>
       </svg>
       <div styleName="title">{ title }</div>
       <div styleName="label">{ label }</div>

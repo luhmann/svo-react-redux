@@ -3,4 +3,6 @@
   "standard.options": {
     "parser": "babel-eslint"
   }
+,
+"eslint.enable": true
 }

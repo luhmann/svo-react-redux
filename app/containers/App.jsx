@@ -4,7 +4,7 @@ import {Header, Footer} from '../components/shared/index'
 import ErrorPage from './ErrorPage.jsx'
 import LoadingPage from './LoadingPage'
 
-import styles from './App.styl';
+import styles from './App.styl'
 
 const App = ({ children }) => {
   return (
@@ -20,6 +20,10 @@ const App = ({ children }) => {
       <Footer/>
     </div>
   )
+}
+
+App.propTypes = {
+  children: React.PropTypes.element.isRequired
 }
 
 export default CSSModules(App, styles, CSSModuleConfig)

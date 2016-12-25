@@ -11,12 +11,13 @@ const IngredientsList = ({ ingredients, servings }) => (
     <div styleName='ingredients'>
         { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />) }
     </div>
-    
+
   </section>
 )
 
 IngredientsList.propTypes = {
-  ingredients: React.PropTypes.array.isRequired
+  ingredients: React.PropTypes.array.isRequired,
+  servings: React.PropTypes.number.isRequired
 }
 
 export default CSSModules(IngredientsList, styles, CSSModuleConfig)
