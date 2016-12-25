@@ -45,8 +45,9 @@ const CopyButton = styled.div`
   height: 3rem;
   width: 4rem;
 
-  &:active, &:hover {
-    background-color: ${colors.accent}
+  &:active,
+  &:hover {
+    background-color: ${colors.accent};
   }
 `
 
