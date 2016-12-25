@@ -16,7 +16,7 @@ const Root = styled.header`
 `
 
 const Header = () => (
-  <Root>
+  <Root role="banner">
     <Logo />
   </Root>
 )
