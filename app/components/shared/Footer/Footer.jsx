@@ -1,11 +1,18 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import React from 'react'
+import styled from 'styled-components'
+import {dimensions, typography} from 'styles/variables.js'
 
-import styles from './Footer.styl'
+
+const Root = styled.footer`
+  font-family: ${typography.fonts.text}   
+  height: ${dimensions.footerHeight}
+  padding 0 ${dimensions.modules.vPadding}
+`
 
 const Footer = () => (
-  <footer styleName='root'>
+  <Root>
     &copy; 2016 Stove vs. Oven
-  </footer>
+  </Root>
 )
 
-export default CSSModules(Footer, styles, CSSModuleConfig)
+export default Footer

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@kadira/storybook'
 
-import Sharing from '@components/shared/Sharing/Sharing.jsx'
+import Sharing from './Sharing.jsx'
 
 storiesOf('Sharing', module)
   .addWithInfo(
