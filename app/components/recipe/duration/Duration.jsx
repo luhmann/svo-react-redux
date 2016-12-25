@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { dimensions, typography } from 'styles/variables.js'
 
+// TODO: check import size
 import moment from 'moment'
 import 'moment-duration-format'
 
@@ -15,6 +16,8 @@ const Root = styled.section`
 
 `
 
+// TODO: check format of hours and minutes
+// TODO: consider design for more than one hour
 const Duration = ({cooking, cooling, preparation}) => (
   <Root>
     <Gauge filledPercent={ preparation / 3600 } title="Vorbereitung" label={moment.duration(preparation, 's').format('h [h], m [min]')} />
