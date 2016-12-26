@@ -1,6 +1,13 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import renderIf from 'render-if'
+import React from 'react'
+import styled from 'styled-components'
+import { colors, typography } from 'styles/variables.js'
 
-import styles from './Category.styl'
+const Root = styled.div`
+  color: ${colors.white};
+  font-family: ${typography.fonts.subheadline};
+  margin-top: 0.4em;
+`
 
 const categoryMapping = {
   breakfast: 'Frühstück',
@@ -10,12 +17,16 @@ const categoryMapping = {
   snack: 'Kleinigkeiten & Snacks'
 }
 
-const Category = ({ type }) => (
-  <div styleName='category'>{ categoryMapping[type] }</div>
-)
-
-Category.propTypes = {
-  type: React.PropTypes.string.isRequired
+const Category = ({ type }) => {
+  return renderIf(!!categoryMapping[type])(() => (
+    <Root>
+      { categoryMapping[type] }
+    </Root>
+  ))
 }
 
-export default CSSModules(Category, styles, CSSModuleConfig)
+Category.propTypes = {
+  type: React.PropTypes.oneOf(Object.keys(categoryMapping)).isRequired
+}
+
+export default Category

@@ -23,6 +23,7 @@ export const colors = {
 export const typography = {
   fonts: {
     headline: 'Telefon Bold',
+    subheadline: '"Telefon", "Helvetica Neue Light", Helvetica, Arial, sans-serif',
     text: 'Yrsa'
   },
   lineHeight: '1.4'
