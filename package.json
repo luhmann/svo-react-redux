@@ -74,6 +74,7 @@
     "raw-loader": "^0.5.1",
     "react-addons-test-utils": "^15.0.1",
     "react-svg-inline": "^1.2.0",
+    "react-test-renderer": "^15.4.1",
     "redux": "^3.1.7",
     "redux-immutable": "^3.0.3",
     "redux-logger": "^2.4.0",
@@ -113,7 +114,6 @@
       "^lib(.*)$": "<rootDir>/app/lib$1",
       "^styles(.*)$": "<rootDir>/app/styles$1",
       "^sharedComponents(.*)$": "<rootDir>/app/components/shared$1",
-
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/jest/fileMock.js",
       "\\.(css|styl)$": "<rootDir>/mocks/jest/styleMock.js"
     }

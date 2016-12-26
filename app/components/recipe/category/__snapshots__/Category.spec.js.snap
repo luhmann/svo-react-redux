@@ -1,0 +1,36 @@
+exports[`Component: <Category /> should map "breakfast"-category 1`] = `
+<div
+  className="eRHmmS">
+  Frühstück
+</div>
+`;
+
+exports[`Component: <Category /> should map "dessert"-category 1`] = `
+<div
+  className="eRHmmS">
+  Dessert & Backen
+</div>
+`;
+
+exports[`Component: <Category /> should map "dinner"-category 1`] = `
+<div
+  className="eRHmmS">
+  Abendessen
+</div>
+`;
+
+exports[`Component: <Category /> should map "lunch"-category 1`] = `
+<div
+  className="eRHmmS">
+  Mittagessen
+</div>
+`;
+
+exports[`Component: <Category /> should map "snack"-category 1`] = `
+<div
+  className="eRHmmS">
+  Kleinigkeiten & Snacks
+</div>
+`;
+
+exports[`Component: <Category /> should omit an unknown category 1`] = `null`;
