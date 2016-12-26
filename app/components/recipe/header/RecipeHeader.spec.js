@@ -1,23 +1,20 @@
 import React from 'react'
-import test from 'tape'
 import { render } from 'enzyme'
 
 import RecipeHeader from './RecipeHeader.jsx'
 
-test('Component: <RecipeHeader />', t => {
-  t.test('should not render subheadline if props are not passed', t => {
+xdescribe('Component: <RecipeHeader />', () => {
+  it('should not render subheadline if props are not passed', () => {
     let code = render(<RecipeHeader />)
 
-    t.equal(code.find('.subtitle').length, 0, 'subheadline is not rendered')
-    t.end()
+    expect(code.find('.subtitle').length).toBe(0)
   })
 
-  t.test('should render subheadline if passed in props', t => {
+  it('should render subheadline if passed in props', () => {
     let testString = 'This is a test'
     let code = render(<RecipeHeader subtitle={ testString } />)
 
-    t.equal(code.find('.subtitle').length, 1, 'subheadline rendered')
-    t.equal(code.find('.subtitle').text(), testString, 'content as expected')
-    t.end()
+    expect(code.find('.subtitle').length).toBe(1)
+    expect(code.find('.subtitle').text()).toBe(testString)
   })
 })
