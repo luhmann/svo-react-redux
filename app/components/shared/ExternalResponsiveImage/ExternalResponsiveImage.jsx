@@ -1,4 +1,4 @@
-import { React } from 'lib/commonImports.js'
+import React from 'react'
 import { buildResImageUrl } from 'lib/UrlBuilder.js'
 
 import {RESPONSIVE_IMAGE_SIZES} from '../../../constants/Common.js'
@@ -11,7 +11,7 @@ const buildSrcSet = (objectId, sizes) => {
     .join(', ')
 }
 
-const ExternalResponsiveImage = ({ img, className, srcset = RESPONSIVE_IMAGE_SIZES, sizes = '100vw' }) => (
+const ExternalResponsiveImage = ({ img, className = '', srcset = RESPONSIVE_IMAGE_SIZES, sizes = '100vw' }) => (
   <img
     className={className}
     src={buildResImageUrl(img.objectId)}
@@ -21,7 +21,10 @@ const ExternalResponsiveImage = ({ img, className, srcset = RESPONSIVE_IMAGE_SIZ
 )
 
 ExternalResponsiveImage.propTypes = {
-  img: React.PropTypes.object.isRequired,
+  img: React.PropTypes.shape({
+    objectId: React.PropTypes.string.isRequired,
+    credits: React.PropTypes.string
+  }),
   className: React.PropTypes.string,
   srcset: React.PropTypes.array,
   sizes: React.PropTypes.string

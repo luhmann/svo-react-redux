@@ -1,17 +1,22 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import React from 'react'
+import styled from 'styled-components'
 
-import ExternalResponsiveImage from 'sharedComponents/ExternalResponsiveImage/ExternalResponsiveImage.jsx'
-import styles from './Cover.styl'
+import { ExternalResponsiveImage } from 'sharedComponents/'
+
+const Root = styled(ExternalResponsiveImage)`
+  height: 65vh;
+  object-fit: cover;
+  width: 100vw;
+`
 
 const Cover = ({ img }) => (
-  <ExternalResponsiveImage
-    styleName='cover'
+  <Root
     img={img}
   />
 )
 
 Cover.propTypes = {
-  img: React.PropTypes.object.isRequired
+  img: ExternalResponsiveImage.propTypes.img.isRequired
 }
 
-export default CSSModules(Cover, styles, CSSModuleConfig)
+export default Cover

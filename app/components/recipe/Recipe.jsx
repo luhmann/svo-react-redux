@@ -16,7 +16,7 @@ import {
   Wine
 } from './'
 
-import Sharing from 'sharedComponents/Sharing/Sharing.jsx'
+import Sharing from 'sharedComponents/'
 
 const Recipe = ({recipe}) => (
   <article>

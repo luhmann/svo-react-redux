@@ -1,0 +1,7 @@
+exports[`Component: <ExternalResponsiveImage /> should render a responsive image 1`] = `
+<img
+  className=""
+  sizes="100vw"
+  src="https://res.cloudinary.com/svo/image/upload/c_fit/lh1nmgmqugmlopswifqt"
+  srcSet="https://res.cloudinary.com/svo/image/upload/c_fit,w_414/lh1nmgmqugmlopswifqt 414w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1024/lh1nmgmqugmlopswifqt 1024w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1280/lh1nmgmqugmlopswifqt 1280w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1366/lh1nmgmqugmlopswifqt 1366w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1920/lh1nmgmqugmlopswifqt 1920w, https://res.cloudinary.com/svo/image/upload/c_fit,w_2500/lh1nmgmqugmlopswifqt 2500w" />
+`;

@@ -13,6 +13,7 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Remove config for supporting css-modules in project and in jest (from package.json)
 * Remove config for stylus
 * Document all components in storybook
+* Remove common-imports construct
 
 ## Jest
 
