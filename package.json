@@ -85,6 +85,7 @@
     "stylelint-processor-styled-components": "^0.0.4",
     "stylus": "^0.54.2",
     "stylus-loader": "^2.0.0",
+    "tinycolor2": "^1.4.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",

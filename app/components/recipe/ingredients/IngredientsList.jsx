@@ -1,18 +1,17 @@
-import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
-import styles from './IngredientsList.styl'
+import React from 'react'
 
+import { ListBox, ListBoxHeader } from 'styles/shared.jsx'
 import Ingredient from './Ingredient.jsx'
 
 const IngredientsList = ({ ingredients, servings }) => (
-  <section styleName='root'>
-    <header styleName='header'>
+  <ListBox>
+    <ListBoxHeader>
       Zutaten für {servings} { (servings === 1) ? 'Portion' : 'Portionen' }
-    </header>
-    <div styleName='ingredients'>
+    </ListBoxHeader>
+    <div>
         { ingredients.map((ingredient, index) => <Ingredient key={index} ingredient={ ingredient } />) }
     </div>
-
-  </section>
+  </ListBox>
 )
 
 IngredientsList.propTypes = {
@@ -20,4 +19,4 @@ IngredientsList.propTypes = {
   servings: React.PropTypes.number.isRequired
 }
 
-export default CSSModules(IngredientsList, styles, CSSModuleConfig)
+export default IngredientsList

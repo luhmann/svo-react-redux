@@ -1,6 +1,6 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
+import React from 'react'
 
-import styles from './Ingredient.styl'
+import { ListBoxItem, ListBoxItemLeft, ListBoxItemRight } from 'styles/shared.jsx'
 
 const mapAmount = (amount) => {
   const mappingTable = {
@@ -13,19 +13,18 @@ const mapAmount = (amount) => {
 }
 
 const Ingredient = ({ ingredient }) => (
-  <div styleName="root">
-    <span styleName="amount">
+  <ListBoxItem>
+    <ListBoxItemLeft>
       { mapAmount(ingredient.amount) } { ingredient.unit }
-    </span>
-    <span styleName="label">
+    </ListBoxItemLeft>
+    <ListBoxItemRight>
       { ingredient.label }
-    </span>
-
-  </div>
+    </ListBoxItemRight>
+  </ListBoxItem>
 )
 
 Ingredient.propTypes = {
   ingredient: React.PropTypes.object.isRequired
 }
 
-export default CSSModules(Ingredient, styles, CSSModuleConfig)
+export default Ingredient

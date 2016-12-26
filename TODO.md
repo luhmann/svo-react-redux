@@ -14,6 +14,7 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Remove config for stylus
 * Document all components in storybook
 * Remove common-imports construct
+* Generalize Dessert, Wine, etc.
 
 ## Jest
 

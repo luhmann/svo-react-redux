@@ -1,10 +1,17 @@
-import { React, CSSModules, CSSModuleConfig } from 'lib/commonImports.js'
-import styles from './RecipeFooter.styl'
+import React from 'react'
+import styled from 'styled-components'
+import { typography, dimensions } from 'styles/variables'
+
+const Root = styled.footer`
+  font-family: ${typography.fonts.text}
+  margin-bottom: ${dimensions.modules.marginBottom}
+  padding: 0 ${dimensions.modules.vPadding}
+`
 
 const RecipeFooter = (props) => (
-  <footer styleName="root">
+  <Root>
     Rezept drucken
-  </footer>
+  </Root>
 )
 
-export default CSSModules(RecipeFooter, styles, CSSModuleConfig)
+export default RecipeFooter

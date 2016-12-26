@@ -1,12 +1,21 @@
-import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
-import styles from './Subtitle.styl'
+import React from 'react'
+import styled from 'styled-components'
+import { dimensions, typography } from 'styles/variables.js'
 
-const Dessert = ({ text }) => (
-  <div styleName='subtitle'>{ text }</div>
+const Root = styled.div`
+  font-family: ${typography.fonts.text};
+  font-style: italic;
+  line-height: ${typography.lineHeight};
+  padding: ${dimensions.modules.marginBottom}; 
+  text-align: center;
+`
+
+const Subtitle = ({ text }) => (
+  <Root>{ text }</Root>
 )
 
-Dessert.propTypes = {
+Subtitle.propTypes = {
   text: React.PropTypes.string
 }
 
-export default CSSModules(Dessert, styles, CSSModuleConfig)
+export default Subtitle

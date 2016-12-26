@@ -1,12 +1,23 @@
-import { React, CSSModules, CSSModuleConfig } from '../../../lib/commonImports.js'
-import styles from './Step.styl'
+import React from 'react'
+import styled from 'styled-components'
+import { colors } from 'styles/variables.js'
+
+import { ListBoxItem, ListBoxItemLeft, ListBoxItemRight } from 'styles/shared.jsx'
 
 // import Ingredient from '../ingredients/Ingredient.jsx'
 
+const Number = styled(ListBoxItemLeft)`
+  border-right: none;
+  color: ${colors.white};
+  font-family: 'Telefon Black';
+  font-size: 2.25rem;
+  line-height: 1;
+`
+
 const Step = ({ step }) => (
-  <div key={ step.step } styleName="root">
-    <div styleName="number">{ step.step }</div>
-    <div styleName="description">{ step.description }</div>
+  <ListBoxItem key={ step.step }>
+    <Number>{ step.step }</Number>
+    <ListBoxItemRight>{ step.description }</ListBoxItemRight>
     {
       /*
       step.ingredients
@@ -20,11 +31,11 @@ const Step = ({ step }) => (
          ? <div>{ step.utensils.join(', ') }</div>
         : '' */
     }
-  </div>
+  </ListBoxItem>
 )
 
 Step.propTypes = {
   step: React.PropTypes.object.isRequired
 }
 
-export default CSSModules(Step, styles, CSSModuleConfig)
+export default Step

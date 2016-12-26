@@ -4,7 +4,7 @@ import { storiesOf } from '@kadira/storybook'
 import { Center } from 'styles/shared.jsx'
 import Category from './Category.jsx'
 
-storiesOf('Atoms', module)
+storiesOf('Molecules', module)
   .addDecorator((story) => (
     <Center style={{ backgroundColor: '#3e3e3e', minHeight: '400px' }}>
       { story() }

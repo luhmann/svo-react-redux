@@ -3,7 +3,7 @@ import { storiesOf } from '@kadira/storybook'
 
 import Cover from './Cover.jsx'
 
-storiesOf('Atoms', module)
+storiesOf('Molecules', module)
   .addWithInfo(
     'Cover',
     `
