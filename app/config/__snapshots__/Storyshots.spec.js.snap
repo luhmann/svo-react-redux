@@ -935,10 +935,12 @@ exports[`Storyshots Atoms Description 1`] = `
         "zIndex": 0,
       }
     }>
-    <section
-      className="dizwAD">
-      Saurer Rhabarber, oppulente Mandeln und sahnige Butter verleihen diesem außergewöhnlichen Kuchen seine große Klasse. Darum steht er jedes Jahr wenn es an der Zeit ist unseren Rhabarber aus dem Garten zu verbrauchen ganz oben auf unserer Liste.
-    </section>
+    <div>
+      <section
+        className="dizwAD">
+        Saurer Rhabarber, oppulente Mandeln und sahnige Butter verleihen diesem außergewöhnlichen Kuchen seine große Klasse. Darum steht er jedes Jahr wenn es an der Zeit ist unseren Rhabarber aus dem Garten zu verbrauchen ganz oben auf unserer Liste.
+      </section>
+    </div>
   </div>
   <a
     onClick={[Function]}
@@ -1028,7 +1030,21 @@ exports[`Storyshots Atoms Description 1`] = `
                 "fontSize": 15,
               }
             }>
-            Introductory description of the recipe
+            Introductory description of the recipe.
+          </p>
+          <p
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "
+                  -apple-system, \".SFNSText-Regular\", \"San Francisco\", \"Roboto\",
+                  \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif
+                ",
+                "fontSize": 15,
+              }
+            }>
+            If none is present the whole component is not rendered
           </p>
         </div>
         <div>
@@ -1054,57 +1070,129 @@ exports[`Storyshots Atoms Description 1`] = `
                 "padding": ".5rem",
               }
             }>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }>
-              <span
+            <div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
                   }
                 }>
-                <
-                Description
-              </span>
-              <span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  <
+                  div
+                </span>
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  >
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  <
+                  Description
+                </span>
                 <span>
-                   
-                  <span
-                    style={Object {}}>
-                    text
-                  </span>
                   <span>
-                    =
+                     
                     <span
                       style={Object {}}>
+                      text
+                    </span>
+                    <span>
+                      =
                       <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }>
-                        \"
-                        Saurer Rhabarber, oppulente Mandeln und sahnige Bu…
-                        \"
+                        style={Object {}}>
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }>
+                          \"
+                          Saurer Rhabarber, oppulente Mandeln und sahnige Bu…
+                          \"
+                        </span>
                       </span>
                     </span>
+                     
                   </span>
-                   
                 </span>
-              </span>
-              <span
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  />
+                </span>
+              </div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
                   }
                 }>
-                />
-              </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  <
+                  Description
+                </span>
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  />
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  </
+                  div
+                  >
+                </span>
+              </div>
             </div>
           </pre>
         </div>
