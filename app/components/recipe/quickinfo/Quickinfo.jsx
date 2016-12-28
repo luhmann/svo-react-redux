@@ -16,7 +16,7 @@ const Root = styled.section`
   width: 36vw;
 `
 
-const Icon = styled(SVGInline)`
+const Icon = styled(({ isActive, ...rest }) => <SVGInline {...rest} />)`
   svg {
     height: 20px; 
     width: 20px;

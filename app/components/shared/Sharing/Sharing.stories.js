@@ -16,7 +16,7 @@ storiesOf('Sharing', module)
       This is the view of the component if the browser supports clipboard actions.
     `,
     () => (
-      <Sharing slug="hungarian-goulash" isClipboardSupported="true" />
+      <Sharing slug="hungarian-goulash" isClipboardSupported={true} />
     )
   )
   .addWithInfo(

@@ -64,7 +64,7 @@ class Sharing extends React.Component {
   constructor (props) {
     super(props)
 
-    ifClipboardSupported = renderIf(props.isClipboardSupported) 
+    ifClipboardSupported = renderIf(props.isClipboardSupported)
 
     this.state = {
       copied: false

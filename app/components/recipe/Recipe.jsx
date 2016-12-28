@@ -18,6 +18,8 @@ import {
 
 import Sharing from 'sharedComponents/'
 
+const isClipboardSupported = document.queryCommandSupported('copy')
+
 const Recipe = ({recipe}) => (
   <article>
     <RecipeHeader title={recipe.title} category={recipe.category} cover={recipe.cover} quickinfo={recipe.quickinfo} />
@@ -51,7 +53,6 @@ const Recipe = ({recipe}) => (
         <Images images={recipe.images} />
       ))
     }
-    <Sharing slug={recipe.slug} isClipboardSupported={document.queryCommandSupported('copy')} />
     <RecipeFooter/>
   </article>
 )
