@@ -63,7 +63,7 @@ const Icon = styled(SVGInline)`
 class Sharing extends React.Component {
   constructor (props) {
     super(props)
-
+    console.log(props)
     ifClipboardSupported = renderIf(props.isClipboardSupported)
 
     this.state = {

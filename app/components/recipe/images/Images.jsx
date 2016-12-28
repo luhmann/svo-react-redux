@@ -14,8 +14,8 @@ const Image = styled(ExternalResponsiveImage)`
   display: inline-block;
   margin-bottom: ${dimensions.modules.vPadding};
   object-fit: cover;
-  width: ${100 - 2 * dimensions.modules.vPadding}vw;
-  height: ${(2 / 3) * (100 - 2 * dimensions.modules.vPadding)}vw;
+  width: ${100 - 2 * parseFloat(dimensions.modules.vPadding)}vw;
+  height: ${(2 / 3) * (100 - 2 * parseFloat(dimensions.modules.vPadding))}vw;
 `
 
 const Images = ({ images }) => (
