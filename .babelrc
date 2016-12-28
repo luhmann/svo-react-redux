@@ -11,7 +11,8 @@
     "transform-class-properties",
     "transform-decorators-legacy",
     "transform-object-assign",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "styled-components"
   ],
   "env": {
     "start": {
