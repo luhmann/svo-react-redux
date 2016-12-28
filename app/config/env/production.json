@@ -18,6 +18,11 @@
       "header": "x-authorization"
     }
   },
+  "scaler": {
+    "protocol": "http",
+    "host": "svo.dev",
+    "port": 9000
+  },
   "url": {
     "protocol": "https",
     "host": "stove-vs-oven.com"
