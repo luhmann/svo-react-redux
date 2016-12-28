@@ -1,5 +1,5 @@
 import renderIf from 'render-if'
-import {React} from 'lib/commonImports.js'
+import React from 'react'
 
 import {
   Dessert,
@@ -17,8 +17,6 @@ import {
 } from './'
 
 import Sharing from 'sharedComponents/'
-
-const isClipboardSupported = document.queryCommandSupported('copy')
 
 const Recipe = ({recipe}) => (
   <article>
@@ -53,6 +51,7 @@ const Recipe = ({recipe}) => (
         <Images images={recipe.images} />
       ))
     }
+    <Sharing slug={recipe.slug} isClipboardSupported={document.queryCommandSupported('copy')} />
     <RecipeFooter/>
   </article>
 )

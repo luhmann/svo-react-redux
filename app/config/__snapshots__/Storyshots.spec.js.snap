@@ -832,7 +832,7 @@ exports[`Storyshots Atoms Spinner on dark background 1`] = `
                     }
                   }>
                   <
-                  styled.div
+                  Center
                 </span>
                 <span>
                   <span>
@@ -927,7 +927,7 @@ exports[`Storyshots Atoms Spinner on dark background 1`] = `
                     }
                   }>
                   <
-                  styled.div
+                  Spinner
                 </span>
                 <span />
                 <span
@@ -953,7 +953,7 @@ exports[`Storyshots Atoms Spinner on dark background 1`] = `
                     }
                   }>
                   </
-                  styled.div
+                  Center
                   >
                 </span>
               </div>
@@ -980,7 +980,7 @@ exports[`Storyshots Atoms Spinner on dark background 1`] = `
                 }
               }>
               \"
-              styled.div
+              Center
               \" Component
             </h2>
             <small>
@@ -995,7 +995,7 @@ exports[`Storyshots Atoms Spinner on dark background 1`] = `
                 }
               }>
               \"
-              styled.div
+              Spinner
               \" Component
             </h2>
             <small>
@@ -1159,7 +1159,7 @@ exports[`Storyshots Atoms Spinner on light background 1`] = `
                     }
                   }>
                   <
-                  styled.div
+                  Center
                 </span>
                 <span>
                   <span>
@@ -1254,7 +1254,7 @@ exports[`Storyshots Atoms Spinner on light background 1`] = `
                     }
                   }>
                   <
-                  styled.div
+                  Spinner
                 </span>
                 <span />
                 <span
@@ -1280,7 +1280,7 @@ exports[`Storyshots Atoms Spinner on light background 1`] = `
                     }
                   }>
                   </
-                  styled.div
+                  Center
                   >
                 </span>
               </div>
@@ -1307,7 +1307,7 @@ exports[`Storyshots Atoms Spinner on light background 1`] = `
                 }
               }>
               \"
-              styled.div
+              Center
               \" Component
             </h2>
             <small>
@@ -1322,7 +1322,7 @@ exports[`Storyshots Atoms Spinner on light background 1`] = `
                 }
               }>
               \"
-              styled.div
+              Spinner
               \" Component
             </h2>
             <small>
@@ -1963,8 +1963,8 @@ exports[`Storyshots Molecules Cover 1`] = `
     <img
       className="jOCsmU"
       sizes="100vw"
-      src="https://res.cloudinary.com/svo/image/upload/c_fit/lh1nmgmqugmlopswifqt"
-      srcSet="https://res.cloudinary.com/svo/image/upload/c_fit,w_414/lh1nmgmqugmlopswifqt 414w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1024/lh1nmgmqugmlopswifqt 1024w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1280/lh1nmgmqugmlopswifqt 1280w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1366/lh1nmgmqugmlopswifqt 1366w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1920/lh1nmgmqugmlopswifqt 1920w, https://res.cloudinary.com/svo/image/upload/c_fit,w_2500/lh1nmgmqugmlopswifqt 2500w" />
+      src="http://svo.dev:9000/lh1nmgmqugmlopswifqt"
+      srcSet="http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:414/fx-sp 414w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1024/fx-sp 1024w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1280/fx-sp 1280w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1366/fx-sp 1366w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1920/fx-sp 1920w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:2500/fx-sp 2500w" />
   </div>
   <a
     onClick={[Function]}
@@ -3602,8 +3602,8 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
         <img
           className="jOCsmU"
           sizes="100vw"
-          src="https://res.cloudinary.com/svo/image/upload/c_fit/lh1nmgmqugmlopswifqt"
-          srcSet="https://res.cloudinary.com/svo/image/upload/c_fit,w_414/lh1nmgmqugmlopswifqt 414w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1024/lh1nmgmqugmlopswifqt 1024w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1280/lh1nmgmqugmlopswifqt 1280w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1366/lh1nmgmqugmlopswifqt 1366w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1920/lh1nmgmqugmlopswifqt 1920w, https://res.cloudinary.com/svo/image/upload/c_fit,w_2500/lh1nmgmqugmlopswifqt 2500w" />
+          src="http://svo.dev:9000/lh1nmgmqugmlopswifqt"
+          srcSet="http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:414/fx-sp 414w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1024/fx-sp 1024w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1280/fx-sp 1280w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1366/fx-sp 1366w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:1920/fx-sp 1920w, http://svo.dev:9000/lh1nmgmqugmlopswifqt/:/rs=w:2500/fx-sp 2500w" />
         <section
           className="dwZYhi">
           <h2
@@ -3623,7 +3623,6 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
                   "__html": "test-file-stub",
                 }
               }
-              isActive={true}
               title="kalorienarm" />
             <span
               className="SVGInline SVGInline--cleaned gMFaeE"
@@ -3632,7 +3631,6 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
                   "__html": "test-file-stub",
                 }
               }
-              isActive={false}
               title="vegetarisch" />
             <span
               className="SVGInline SVGInline--cleaned gMFaeE"
@@ -3641,7 +3639,6 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
                   "__html": "test-file-stub",
                 }
               }
-              isActive={undefined}
               title="schnell" />
             <span
               className="SVGInline SVGInline--cleaned ecccSk"
@@ -3650,7 +3647,6 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
                   "__html": "test-file-stub",
                 }
               }
-              isActive={true}
               title="zeitaufwendig" />
           </section>
         </section>
@@ -3961,7 +3957,7 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
                                   "color": "#666",
                                 }
                               }>
-                              glutenFree
+                              quick
                             </span>
                             : 
                             <span>
@@ -4537,8 +4533,8 @@ exports[`Storyshots Organisms Loading Screen 1`] = `
       <img
         className="EtQgj"
         sizes="100vw"
-        src="https://res.cloudinary.com/svo/image/upload/c_fit/honey_f0uwjn.jpg"
-        srcSet="https://res.cloudinary.com/svo/image/upload/c_fit,w_414/honey_f0uwjn.jpg 414w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1024/honey_f0uwjn.jpg 1024w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1280/honey_f0uwjn.jpg 1280w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1366/honey_f0uwjn.jpg 1366w, https://res.cloudinary.com/svo/image/upload/c_fit,w_1920/honey_f0uwjn.jpg 1920w, https://res.cloudinary.com/svo/image/upload/c_fit,w_2500/honey_f0uwjn.jpg 2500w" />
+        src="http://svo.dev:9000/honey_f0uwjn.jpg"
+        srcSet="http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:414/fx-sp 414w, http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:1024/fx-sp 1024w, http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:1280/fx-sp 1280w, http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:1366/fx-sp 1366w, http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:1920/fx-sp 1920w, http://svo.dev:9000/honey_f0uwjn.jpg/:/rs=w:2500/fx-sp 2500w" />
       <div
         className="kVCnDH">
         <div
@@ -5244,23 +5240,6 @@ exports[`Storyshots Sharing clipboard supported 1`] = `
                   <span
                     style={Object {}}>
                     isClipboardSupported
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}>
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }>
-                        \"
-                        true
-                        \"
-                      </span>
-                    </span>
                   </span>
                    
                 </span>

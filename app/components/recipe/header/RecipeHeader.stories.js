@@ -22,11 +22,10 @@ storiesOf('Molecules', module)
 
       const quickinfo = {
         skinny: true,
-        glutenFree: false,
+        quick: false,
         restTime: true,
-        vegetarian: false 
+        vegetarian: false
       }
-
 
       return (
         <RecipeHeader
