@@ -8,8 +8,6 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Yrsa is included from Google Webfonts currently, reconsider
 * Integrate scaler or mocks of it into project, so it runs standalone
 * Replace apimocker with dyson
-* Add precommit-hook
-* Use Compression-Plugin in Webpack for gzipped files
 
 ## Styled Components
 
