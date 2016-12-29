@@ -6,6 +6,9 @@ import {Header, Footer} from '../components/shared/index'
 import ErrorPage from './ErrorPage.jsx'
 import LoadingPage from './LoadingPage'
 
+// inject styles which are global in scope
+import 'styles/global.js'
+
 const AppWrapper = styled.div`
   background-color: ${colors.background};
   display: flex;

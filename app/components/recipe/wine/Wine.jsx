@@ -33,7 +33,6 @@ const Name = styled.div`
   font-weight: 600;
 `
 
-
 const Wine = ({ name, description }) => (
   <Root>
     <Icon svg={glassIcon} title="Weinempfehlung" />

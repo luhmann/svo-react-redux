@@ -9,12 +9,12 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Integrate scaler or mocks of it into project, so it runs standalone
 * Replace apimocker with dyson
 * Add precommit-hook
+* Use Compression-Plugin in Webpack for gzipped files
 
 ## Styled Components
 
 * Finish migration
 * Remove config for supporting css-modules in project and in jest (from package.json)
-* Remove config for stylus
 * Document all components in storybook
 * Remove common-imports construct
 * Generalize Dessert, Wine, etc.

@@ -1,4 +1,14 @@
 import { injectGlobal } from 'styled-components'
+import { colors } from './variables.js'
+
+// TODO: Right now loaded from Google CDN, consider if this should stay like this
+// @font-face
+//   font-display "swap"
+//   font-family "Yrsa"
+//   font-weight 400
+//   font-style normal
+//   src url('assets/fonts/yrsa-regular-webfont.woff2') format('woff2'),
+//       url('assets/fonts/yrsa-regular-webfont.woff') format('woff')
 
 // reset
 injectGlobal`
@@ -45,4 +55,22 @@ h6 {
 }
 `
 
+// typography
 
+injectGlobal`
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+`
+
+// some global styles
+injectGlobal`
+::selection {
+  background-color: ${colors.accent};
+  color: ${colors.white}; 
+}
+
+html {
+  -webkit-tap-highlight-color: ${colors.accent};
+}
+`
