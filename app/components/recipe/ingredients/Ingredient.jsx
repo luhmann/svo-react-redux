@@ -1,12 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
+import { typography } from 'styles/variables.js'
 
 import { ListBoxItem, ListBoxItemLeft, ListBoxItemRight } from 'styles/shared.jsx'
 
+const Amount = styled(ListBoxItemLeft)`
+  font-family: ${typography.fonts.text}
+`
+
+const Label = styled(ListBoxItemRight)`
+  font-family: ${typography.fonts.text}
+`
+
 const mapAmount = (amount) => {
   const mappingTable = {
-    '0.25': '¼',
-    '0.75': '¾',
-    '0.5': '½'
+    0.25: '¼',
+    0.75: '¾',
+    0.5: '½'
   }
 
   return mappingTable[amount] || amount
@@ -14,17 +24,21 @@ const mapAmount = (amount) => {
 
 const Ingredient = ({ ingredient }) => (
   <ListBoxItem>
-    <ListBoxItemLeft>
+    <Amount>
       { mapAmount(ingredient.amount) } { ingredient.unit }
-    </ListBoxItemLeft>
-    <ListBoxItemRight>
+    </Amount>
+    <Label>
       { ingredient.label }
-    </ListBoxItemRight>
+    </Label>
   </ListBoxItem>
 )
 
 Ingredient.propTypes = {
-  ingredient: React.PropTypes.object.isRequired
+  ingredient: React.PropTypes.shape({
+    amount: React.PropTypes.number.isRequired,
+    label: React.PropTypes.string.isRequired,
+    unit: React.PropTypes.string.isRequired
+  })
 }
 
 export default Ingredient

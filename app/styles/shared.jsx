@@ -40,7 +40,6 @@ export const ListBoxItemLeft = styled.span`
 `
 
 export const ListBoxItemRight = styled.span`
-  border-right: 1px solid ${colors.background};
   flex-grow: 1;
   display: inline-block;
   margin-left: 7px;

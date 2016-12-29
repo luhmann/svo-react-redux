@@ -12,9 +12,7 @@ Purpose: Document everything left half-finished the last time you had the chance
 ## Styled Components
 
 * Finish migration
-* Remove config for supporting css-modules in project and in jest (from package.json)
 * Document all components in storybook
-* Remove common-imports construct
 * Generalize Dessert, Wine, etc.
 
 ## Jest

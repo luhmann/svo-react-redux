@@ -16,6 +16,7 @@
     "jest": true
   },
   "rules": {
+    "quote-props": ["error", "as-needed"]
   },
   "plugins": [
     "react"
