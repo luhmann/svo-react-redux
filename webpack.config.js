@@ -1,5 +1,6 @@
 require('dotenv').config()
 const Clean = require('clean-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlwebpackPlugin = require('html-webpack-plugin')
 const merge = require('webpack-merge')
@@ -120,6 +121,7 @@ if (TARGET === 'build') {
           'NODE_ENV': JSON.stringify('production')
         }
       }),
+      new CompressionPlugin(),
       new Clean([PATHS.build]),
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({
