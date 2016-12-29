@@ -24,7 +24,8 @@ export const typography = {
   fonts: {
     headline: 'Telefon Bold',
     subheadline: '"Telefon", "Helvetica Neue Light", Helvetica, Arial, sans-serif',
-    text: 'Yrsa'
+    text: '"Yrsa", Georgia, serif',
+    numbers: '"Telefon Black", Georgia, serif'
   },
   lineHeight: '1.4'
 }

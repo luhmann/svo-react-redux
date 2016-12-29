@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from 'styles/variables.js'
+import { colors, typography } from 'styles/variables.js'
 
 import { ListBoxItem, ListBoxItemLeft, ListBoxItemRight } from 'styles/shared.jsx'
 
@@ -9,15 +9,19 @@ import { ListBoxItem, ListBoxItemLeft, ListBoxItemRight } from 'styles/shared.js
 const Number = styled(ListBoxItemLeft)`
   border-right: none;
   color: ${colors.white};
-  font-family: 'Telefon Black';
+  font-family: ${typography.fonts.numbers};
   font-size: 2.25rem;
   line-height: 1;
+`
+
+const Description = styled(ListBoxItemRight)`
+  border-bottom: 1px solid ${colors.background}
 `
 
 const Step = ({ step }) => (
   <ListBoxItem key={ step.step }>
     <Number>{ step.step }</Number>
-    <ListBoxItemRight>{ step.description }</ListBoxItemRight>
+    <Description>{ step.description }</Description>
     {
       /*
       step.ingredients

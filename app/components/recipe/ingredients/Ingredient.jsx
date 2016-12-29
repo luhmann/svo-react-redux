@@ -35,9 +35,9 @@ const Ingredient = ({ ingredient }) => (
 
 Ingredient.propTypes = {
   ingredient: React.PropTypes.shape({
-    amount: React.PropTypes.number.isRequired,
+    amount: React.PropTypes.number,
     label: React.PropTypes.string.isRequired,
-    unit: React.PropTypes.string.isRequired
+    unit: React.PropTypes.string
   })
 }
 

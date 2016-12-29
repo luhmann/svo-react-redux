@@ -32,16 +32,20 @@ export const ListBoxItem = styled.div`
 
 export const ListBoxItemLeft = styled.span`
   border-right: 1px solid ${colors.background};
+  color: ${colors.text};
   display: inline-block;
   font-weight: 500;
   min-width: 54px;
   padding: 4px 6px 0;
-  text-alig: right;
+  text-align: right;
 `
 
 export const ListBoxItemRight = styled.span`
-  flex-grow: 1;
+  color: ${colors.text}
   display: inline-block;
+  font-family: ${typography.fonts.text}
+  flex-grow: 1;
+  line-height: ${typography.lineHeight};
   margin-left: 7px;
   padding: 4px 0;
 `
