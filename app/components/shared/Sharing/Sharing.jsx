@@ -1,6 +1,6 @@
 import renderIf from 'render-if'
 import SVGInline from 'react-svg-inline'
-import { React } from 'lib/commonImports.js'
+import React from 'react'
 import styled from 'styled-components'
 import { colors, dimensions, typography } from 'styles/variables.js'
 import { buildRecipeUrl } from 'lib/UrlBuilder.js'

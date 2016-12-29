@@ -1,4 +1,4 @@
-import { React } from '../../lib/commonImports.js'
+import React from 'react'
 
 const Error = ({ message }) => (
   <div>{ message }</div>

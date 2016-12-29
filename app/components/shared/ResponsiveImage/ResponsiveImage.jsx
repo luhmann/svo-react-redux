@@ -1,4 +1,4 @@
-import { React } from 'lib/commonImports.js'
+import React from 'react'
 
 import RESPONSIVE_IMAGE_SIZES from '../../../constants/Common.js'
 

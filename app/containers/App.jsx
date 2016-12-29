@@ -1,8 +1,8 @@
-import { React } from 'lib/commonImports.js'
+import React from 'react'
 import styled from 'styled-components'
 
 import { dimensions, colors } from 'styles/variables.js'
-import {Header, Footer} from '../components/shared/index'
+import { Header, Footer } from 'sharedComponents/'
 import ErrorPage from './ErrorPage.jsx'
 import LoadingPage from './LoadingPage'
 

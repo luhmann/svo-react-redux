@@ -1,9 +1,8 @@
-import { React } from '../../lib/commonImports.js'
+import React from 'react'
 import styled from 'styled-components'
 import { colors, layers, typography } from 'styles/variables.js'
 
 import { ExternalResponsiveImage, Spinner } from 'sharedComponents/'
-
 
 const Root = styled.section`
   height: 100vh;
