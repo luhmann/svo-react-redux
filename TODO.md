@@ -10,9 +10,6 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Replace apimocker with dyson
 
 ## Styled Components
-
-* Finish migration
-* Document all components in storybook
 * Generalize Dessert, Wine, etc.
 
 ## Jest
