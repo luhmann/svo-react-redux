@@ -11,7 +11,7 @@ const buildSrcSet = (objectId, sizes) => {
     .join(', ')
 }
 
-const ExternalResponsiveImage = ({ img, className = '', srcset = RESPONSIVE_IMAGE_SIZES, sizes = '100vw' }) => (
+const ScalerResponsiveImage = ({ img, className = '', srcset = RESPONSIVE_IMAGE_SIZES, sizes = '100vw' }) => (
   <img
     className={className}
     src={buildScalerImageUrl(img.objectId)}
@@ -19,7 +19,7 @@ const ExternalResponsiveImage = ({ img, className = '', srcset = RESPONSIVE_IMAG
     sizes={sizes} />
 )
 
-ExternalResponsiveImage.propTypes = {
+ScalerResponsiveImage.propTypes = {
   img: React.PropTypes.shape({
     objectId: React.PropTypes.string.isRequired,
     credits: React.PropTypes.string
@@ -29,4 +29,4 @@ ExternalResponsiveImage.propTypes = {
   sizes: React.PropTypes.string
 }
 
-export default ExternalResponsiveImage
+export default ScalerResponsiveImage

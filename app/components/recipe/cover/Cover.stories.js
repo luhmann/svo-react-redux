@@ -14,7 +14,7 @@ storiesOf('Molecules', module)
     `,
     () => {
       const img = {
-        objectId: 'lh1nmgmqugmlopswifqt',
+        objectId: 'lh1nmgmqugmlopswifqt.jpg',
         credits: 'Jan Florian Dietrich'
       }
 

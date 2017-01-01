@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { colors, layers, typography } from 'styles/variables.js'
 
-import { ExternalResponsiveImage, Spinner } from 'sharedComponents/'
+import { ScalerResponsiveImage, Spinner } from 'sharedComponents/'
 
 const Root = styled.section`
   height: 100vh;
   width: 100vw;
 `
 
-const BackgroundImage = styled(ExternalResponsiveImage)`
+const BackgroundImage = styled(ScalerResponsiveImage)`
   height: 100vh;
   object-fit: cover;
   width: 100vw;

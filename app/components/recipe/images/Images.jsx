@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { dimensions } from 'styles/variables.js'
 
-import { ExternalResponsiveImage } from 'sharedComponents/'
+import { ScalerResponsiveImage } from 'sharedComponents/'
 
 const Root = styled.section`
   line-height: 0
@@ -10,7 +10,7 @@ const Root = styled.section`
   padding: ${dimensions.modules.marginBottom} ${dimensions.modules.vPadding} 0
 `
 
-const Image = styled(ExternalResponsiveImage)`
+const Image = styled(ScalerResponsiveImage)`
   display: inline-block;
   margin-bottom: ${dimensions.modules.vPadding};
   object-fit: cover;

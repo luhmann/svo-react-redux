@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { ExternalResponsiveImage } from 'sharedComponents/'
+import { ScalerResponsiveImage } from 'sharedComponents/'
 
-const Root = styled(ExternalResponsiveImage)`
+const Root = styled(ScalerResponsiveImage)`
   height: 65vh;
   object-fit: cover;
   width: 100vw;
@@ -16,7 +16,7 @@ const Cover = ({ img }) => (
 )
 
 Cover.propTypes = {
-  img: ExternalResponsiveImage.propTypes.img.isRequired
+  img: ScalerResponsiveImage.propTypes.img.isRequired
 }
 
 export default Cover

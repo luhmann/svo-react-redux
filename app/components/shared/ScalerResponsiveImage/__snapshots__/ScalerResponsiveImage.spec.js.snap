@@ -1,0 +1,7 @@
+exports[`Component: <ScalerResponsiveImage /> should render a responsive image 1`] = `
+<img
+  className=""
+  sizes="100vw"
+  src="http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg"
+  srcSet="http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:414/fx-sp 414w, http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:1024/fx-sp 1024w, http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:1280/fx-sp 1280w, http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:1366/fx-sp 1366w, http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:1920/fx-sp 1920w, http://svo.dev:9000/lh1nmgmqugmlopswifqt.jpg/:/rs=w:2500/fx-sp 2500w" />
+`;

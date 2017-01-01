@@ -1,5 +1,5 @@
 export {default as Gauge} from './Gauge/Gauge.jsx'
-export {default as ExternalResponsiveImage} from './ExternalResponsiveImage/ExternalResponsiveImage.jsx'
+export {default as ScalerResponsiveImage} from './ScalerResponsiveImage/ScalerResponsiveImage.jsx'
 export {default as Header} from './Header/Header.jsx'
 export {default as Footer} from './Footer/Footer.jsx'
 export {default as Logo} from './Logo/Logo.jsx'
