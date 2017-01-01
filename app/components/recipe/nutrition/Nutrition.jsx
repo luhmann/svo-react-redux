@@ -37,7 +37,7 @@ const Calories = styled.div`
 const Nutrition = ({carbs, cal, fat, protein}) => (
   <Root>
     <Icon svg={kcalIcon} title="Nährwerte"/>
-    <Calories>Kalorien { cal } / Eiweiß { protein }g / Kohlenhydrate { carbs }g / Fett { fat }g</Calories>
+    <Calories>Kalorien: { cal } / Eiweiß: { protein }g / Kohlenhydrate: { carbs }g / Fett: { fat }g</Calories>
   </Root>
 )
 

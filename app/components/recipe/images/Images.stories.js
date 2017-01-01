@@ -13,10 +13,16 @@ storiesOf('Atoms', module)
       the image scaler.
     `,
     () => {
-      const img = [{
-        objectId: 'lh1nmgmqugmlopswifqt.jpg',
-        credits: 'Jan Florian Dietrich'
-      }]
+      const img = [
+        {
+          objectId: 'lh1nmgmqugmlopswifqt.jpg',
+          credits: 'Jan Florian Dietrich'
+        },
+        {
+          objectId: 'oq5uejq9klfh6g8wz54n.jpg',
+          credits: 'Jan Florian Dietrich'
+        }
+      ]
 
       return (
         <Images

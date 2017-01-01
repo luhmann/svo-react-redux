@@ -21,4 +21,4 @@ Purpose: Document everything left half-finished the last time you had the chance
 * Reconsider if snapshot testing for storybook is best situated in `app/config`
 
 ## Scaler
-* Recover from errorr
+* Recover from error without exiting
