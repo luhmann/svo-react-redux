@@ -3598,7 +3598,7 @@ hoek@4.x.x:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.1.0.tgz#4a4557460f69842ed463aa00628cc26d2683afa7"
 
-hoist-non-react-statics@1.x.x, hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.0.5, hoist-non-react-statics@^1.2.0:
+hoist-non-react-statics@1.x.x, hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -3837,6 +3837,30 @@ indexes-of@^1.0.1:
 indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
+
+inferno-compat@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-1.0.7.tgz#6800d6c413e68d1fb353bac37c0b218298b77f6d"
+  dependencies:
+    inferno "1.0.7"
+    inferno-component "1.0.7"
+    inferno-transition-group "1.1.0"
+    proptypes "0.14.3"
+    rc-css-transition-group "2.1.4"
+
+inferno-component@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.7.tgz#a3b350ea023e7056fd5b10392053bb0a207ed99d"
+  dependencies:
+    inferno "1.0.7"
+
+inferno-transition-group@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/inferno-transition-group/-/inferno-transition-group-1.1.0.tgz#7f7cb800530e7b3d1b6d3867c87a3d6ec50aa003"
+
+inferno@1.0.7, inferno@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.7.tgz#6e4cd800cc752ff76876f5d310dbec508ce0dcbc"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -5602,10 +5626,6 @@ object-keys@^1.0.10, object-keys@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
-object-unfreeze@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/object-unfreeze/-/object-unfreeze-1.1.0.tgz#69628bea1f3c9d29f4eb0ba63b38002d70ea3ce9"
-
 object.assign@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.0.4.tgz#b1c9cc044ef1b9fe63606fc141abbb32e14730cc"
@@ -6312,6 +6332,10 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+proptypes@0.14.3:
+  version "0.14.3"
+  resolved "https://registry.yarnpkg.com/proptypes/-/proptypes-0.14.3.tgz#948d47f0ef1b501e34d934e42b39d60d26a8bf9d"
+
 proxy-addr@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-1.0.1.tgz#c7c566d5eb4e3fad67eeb9c77c5558ccc39b88a8"
@@ -6427,6 +6451,10 @@ raw-loader@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
 
+rc-css-transition-group@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/rc-css-transition-group/-/rc-css-transition-group-2.1.4.tgz#3bb6cbf33033b9b452065a98fb24efe18405fc82"
+
 rc@^1.1.2, rc@~1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.1.6.tgz#43651b76b6ae53b5c802f1151fa3fc3b059969c9"
@@ -6444,14 +6472,6 @@ react-addons-test-utils@^15.0.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.4.1.tgz#1e4caab151bf27cce26df5f9cb714f4fd8359ae1"
 
-react-css-modules@^3.7.4:
-  version "3.7.10"
-  resolved "https://registry.yarnpkg.com/react-css-modules/-/react-css-modules-3.7.10.tgz#300da561e550eeec5ebc0bc8c7d51d77d88ae2d7"
-  dependencies:
-    hoist-non-react-statics "^1.0.5"
-    lodash "^4.6.1"
-    object-unfreeze "^1.0.2"
-
 react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
@@ -6468,7 +6488,7 @@ react-docgen@^2.12.1:
     node-dir "^0.1.10"
     recast "^0.11.5"
 
-react-dom@^15.0.1:
+react-dom@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.1.tgz#d54c913261aaedb17adc20410d029dcc18a1344a"
   dependencies:
@@ -6587,7 +6607,7 @@ react-transform-hmr@^1.0.3:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
-"react@^0.14.0 || ^15.0.0", react@^15.0.1, react@^15.4.1:
+"react@^0.14.0 || ^15.0.0", react@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
   dependencies:

@@ -59,7 +59,9 @@ const common = {
       lib: path.resolve(PATHS.app, 'lib'),
       assets: path.resolve(PATHS.app, 'assets'),
       styles: path.resolve(PATHS.app, 'styles'),
-      sharedComponents: path.resolve(PATHS.app, 'components', 'shared')
+      sharedComponents: path.resolve(PATHS.app, 'components', 'shared'),
+      'react': 'inferno-compat',
+      'react-dom': 'inferno-compat'
     }
   },
   output: {
