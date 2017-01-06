@@ -41,7 +41,7 @@ const common = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&name=/[hash].script.[ext]&mimetype=application/font-woff',
+        loader: 'url-loader?limit=10000&name=/[hash].[ext]&mimetype=application/font-woff',
         include: PATHS.app
       },
       {
