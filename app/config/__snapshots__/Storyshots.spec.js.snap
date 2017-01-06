@@ -3266,7 +3266,7 @@ exports[`Storyshots Molecules Dessert 1`] = `
         }
       }>
       <section
-        className="kFzJDb">
+        className="dxlAEr">
         <span
           className="SVGInline hNooWA"
           dangerouslySetInnerHTML={
@@ -6376,7 +6376,7 @@ exports[`Storyshots Molecules Wine 1`] = `
     <section
       className="dxlAEr">
       <span
-        className="SVGInline eqPxcJ"
+        className="SVGInline likXJg"
         dangerouslySetInnerHTML={
           Object {
             "__html": "test-file-stub",

@@ -7,7 +7,8 @@ import cupcakeIcon from './icons/cupcake.svg'
 
 const Root = styled.section`
   display: flex;
-  margin: 0 ${dimensions.modules.vPadding}
+  margin: 0 ${dimensions.modules.vPadding};
+  padding: 10px 16px;
 `
 
 const Icon = styled(SVGInline)`

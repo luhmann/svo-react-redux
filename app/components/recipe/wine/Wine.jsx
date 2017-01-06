@@ -18,8 +18,7 @@ const Icon = styled(SVGInline)`
   
   svg {
     fill: ${colors.darkGray};
-    margin-right: -4px;
-    width: 36px; 
+    width: 20px; 
   }
 `
 
