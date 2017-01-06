@@ -1,34 +1,34 @@
 exports[`Component: <Category /> should map "breakfast"-category 1`] = `
 <div
-  className="eRHmmS">
+  className="eskeaq">
   Frühstück
 </div>
 `;
 
 exports[`Component: <Category /> should map "dessert"-category 1`] = `
 <div
-  className="eRHmmS">
+  className="eskeaq">
   Dessert & Backen
 </div>
 `;
 
 exports[`Component: <Category /> should map "dinner"-category 1`] = `
 <div
-  className="eRHmmS">
+  className="eskeaq">
   Abendessen
 </div>
 `;
 
 exports[`Component: <Category /> should map "lunch"-category 1`] = `
 <div
-  className="eRHmmS">
+  className="eskeaq">
   Mittagessen
 </div>
 `;
 
 exports[`Component: <Category /> should map "snack"-category 1`] = `
 <div
-  className="eRHmmS">
+  className="eskeaq">
   Kleinigkeiten & Snacks
 </div>
 `;

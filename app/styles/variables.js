@@ -22,10 +22,10 @@ export const colors = {
 
 export const typography = {
   fonts: {
-    headline: 'Telefon Bold',
-    subheadline: '"Telefon", "Helvetica Neue Light", Helvetica, Arial, sans-serif',
+    headline: '"Telefon Web", Georgia, serif',
+    subheadline: '"Telefon Web", Georgia, serif',
     text: '"Yrsa", Georgia, serif',
-    numbers: '"Telefon Black", Georgia, serif'
+    numbers: '"Telefon Web Black", Georgia, serif'
   },
   lineHeight: '1.4'
 }

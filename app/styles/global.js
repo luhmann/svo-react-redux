@@ -1,5 +1,8 @@
 import { injectGlobal } from 'styled-components'
 import { colors } from './variables.js'
+import TelefonNormal from '../assets/fonts/telefon_web_normal.woff'
+import TelefonBold from '../assets/fonts/telefon_web_bold.woff'
+import TelefonBlack from '../assets/fonts/telefon_web_black.woff'
 
 // TODO: Right now loaded from Google CDN, consider if this should stay like this
 // @font-face
@@ -58,9 +61,32 @@ h6 {
 // typography
 
 injectGlobal`
-  body {
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
+@font-face {
+  font-family: 'Telefon Web Black';
+  src: url('${TelefonBlack}') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Telefon Web';
+    src: url('${TelefonBold}') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Telefon Web';
+    src: url('${TelefonNormal}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 `
 
 // some global styles

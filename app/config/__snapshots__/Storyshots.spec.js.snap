@@ -1998,23 +1998,23 @@ exports[`Storyshots Molecules Category 1`] = `
       }>
       <div>
         <div
-          className="eRHmmS">
+          className="eskeaq">
           Frühstück
         </div>
         <div
-          className="eRHmmS">
+          className="eskeaq">
           Mittagessen
         </div>
         <div
-          className="eRHmmS">
+          className="eskeaq">
           Abendessen
         </div>
         <div
-          className="eRHmmS">
+          className="eskeaq">
           Dessert & Backen
         </div>
         <div
-          className="eRHmmS">
+          className="eskeaq">
           Kleinigkeiten & Snacks
         </div>
       </div>
@@ -5536,11 +5536,11 @@ exports[`Storyshots Molecules RecipeHeader 1`] = `
         <section
           className="dwZYhi">
           <h2
-            className="dezPOh">
+            className="fipTqm">
             Ungarischer Wildgulasch
           </h2>
           <div
-            className="eRHmmS">
+            className="eskeaq">
             Abendessen
           </div>
           <section
@@ -7986,7 +7986,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             1
           </span>
           <span
@@ -7997,7 +7997,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             2
           </span>
           <span
@@ -8008,7 +8008,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             3
           </span>
           <span
@@ -8019,7 +8019,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             4
           </span>
           <span
@@ -8030,7 +8030,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             5
           </span>
           <span
@@ -8041,7 +8041,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             6
           </span>
           <span
@@ -8052,7 +8052,7 @@ exports[`Storyshots Organisms Preparation 1`] = `
         <div
           className="csaiDF">
           <span
-            className="eaZSlo">
+            className="dCKqYd">
             7
           </span>
           <span
