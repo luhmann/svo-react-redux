@@ -22,6 +22,7 @@ const Meta = styled.section`
 const Title = styled.h2`
   font-family: ${typography.fonts.headline};
   font-weight: bold;
+  font-size: 7vw;
   letter-spacing: 1px;
   line-height: 1; 
   margin: 0;

@@ -30,7 +30,7 @@ storiesOf('Molecules', module)
       return (
         <RecipeHeader
           cover={img}
-          title="Ungarischer Wildgulasch"
+          title="Ungarisches Wildgulasch"
           category="dinner"
           quickinfo={quickinfo}
         />
